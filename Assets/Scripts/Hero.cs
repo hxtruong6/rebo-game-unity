@@ -24,7 +24,8 @@ public class Hero : MonoBehaviour
         speed = 7f;
         jumpSpeed = 200f;
         jumpCount = 0;
-     
+        //GetComponent<Animator>().GetComponentInParent<AnimatorControllerParameter>
+        
         damage = new Damage();
         
         characterSprite = GetComponent<SpriteRenderer>();
