@@ -4,23 +4,30 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour
 {
-    public float speed;
-    public float jumpSpeed;
-    public int jumpCount;
+    public float speed = 7;
+    public float jumpSpeed = 200;
+    public int jumpCount = 0;
     private const int maxJumpCount = 2;
+
     public LevelBar level;
     public HealthBar health;
-
-    private SpriteRenderer sprite;
+    public WeaponBar weaponBar;
+    
+    private SpriteRenderer characterSprite;
     private Damage damage;
+
+    private const string RUN_ANIMATION = "isRunning";
+    private const string SHOOT_ANIMATION = "isShooting";
 
     void Start()
     {
         speed = 7f;
         jumpSpeed = 200f;
         jumpCount = 0;
-      
-        sprite = GetComponent<SpriteRenderer>();
+     
+        damage = new Damage();
+        
+        characterSprite = GetComponent<SpriteRenderer>();
     }
 
 
@@ -31,53 +38,140 @@ public class Hero : MonoBehaviour
 
     private void Interact()
     {
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
+        if (MoveLeftKey() || MoveRightKey())
         {
-            SetRun(true);
+            SetRun_Animation(true);
 
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (MoveRightKey())
             {
-                sprite.flipX = false;
+                characterSprite.flipX = false;
 
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(speed, 0));
+                Move(new Vector2(speed, 0));
             }
             else
             {
-                sprite.flipX = true;
+                characterSprite.flipX = true;
 
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(-speed, 0));
+                Move(new Vector2(-speed, 0));
             }
 
         }
         else
         {
-            SetRun(false);
+            SetRun_Animation(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (JumpKey())
         {
             if (jumpCount < maxJumpCount)
             {
                 jumpCount++;
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpSpeed));
+                Move(new Vector2(0, jumpSpeed));
             }
+        }
+
+        if (ShootKey())
+        {
+            if (weaponBar.GetWeapon().CanShoot())
+            {
+                Shoot();                
+            }     
+        }
+        else
+        {
+            SetShoot_Animation(false);
+        }
+
+        if (ChangeWeaponKey())
+        {
+
         }
     }
 
-    
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        jumpCount = 0;
+        switch (collision.gameObject.tag)
+        {
+            case "Ground":
+                jumpCount = 0;
+                break;
+            case "Enemy":
+
+                break;
+        }
     }
 
-    private void SetRun(bool value)
+    private void Move(Vector2 force)
     {
-        GetComponent<Animator>().SetBool("isRunning", value);
+        GetComponent<Rigidbody2D>().AddForce(force);
     }
 
-    private void SetShoot(bool value)
+    private void SetRun_Animation(bool value)
     {
-        GetComponent<Animator>().SetBool("isShooting", value);
+        GetComponent<Animator>().SetBool(RUN_ANIMATION, value);
     }
+
+    private bool IsRunning()
+    {
+        return GetComponent<Animator>().GetBool(RUN_ANIMATION);
+    }
+
+    private void SetShoot_Animation(bool value)
+    {
+        GetComponent<Animator>().SetBool(SHOOT_ANIMATION, value);
+    }
+
+    private void Shoot()
+    {
+
+        // Config Bullet
+        Vector2 bulletPos = transform.position;
+        Vector2 distanceBetweenBulletVsHero = new Vector2(1, 0);
+        if (characterSprite.flipX)
+        {
+            bulletPos -= distanceBetweenBulletVsHero;
+        }
+        else
+        {
+            bulletPos += distanceBetweenBulletVsHero;
+        }
+
+        weaponBar.GetWeapon().Shoot(bulletPos, TotalDamage(), 0, characterSprite.flipX);
+
+        // Set animation
+        SetShoot_Animation(true);
+    }
+
+    private float TotalDamage()
+    {
+        return damage.Attack();
+    }
+
+    private bool MoveLeftKey()
+    {
+        return Input.GetKey(KeyCode.LeftArrow);
+    }
+
+    private bool MoveRightKey()
+    {
+        return Input.GetKey(KeyCode.RightArrow);
+    }
+
+    private bool JumpKey()
+    {
+        return Input.GetKeyDown(KeyCode.UpArrow);
+    }
+
+    private bool ShootKey()
+    {
+        return Input.GetKey(KeyCode.H) || Input.GetKey(KeyCode.Space);
+    }
+
+    private bool ChangeWeaponKey()
+    {
+        return Input.GetKey(KeyCode.N);
+    }
+
+    
+    
 }

@@ -6,7 +6,7 @@ public class Damage : Object
 {
     public float baseDamage, currentDamage;
 
-    Damage()
+    public Damage()
     {
         baseDamage = 50;
         currentDamage = baseDamage;

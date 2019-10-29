@@ -117,4 +117,9 @@ public class EnemyController : MonoBehaviour
        
 
     }
+
+    public void BePushed(float force)
+    {
+            
+    }
 }
