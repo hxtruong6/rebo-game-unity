@@ -4,16 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    const string MISSION_1 = "Mission1";
+    const string MISSIONS = "Missions";
     public void PlayGame()
     {
-        StartCoroutine(LoadYourAsyncScene());
+        StartCoroutine(LoadYourAsyncScene(MISSIONS));
     }
 
 
-    IEnumerator LoadYourAsyncScene()
+    IEnumerator LoadYourAsyncScene(string scence)
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(MISSION_1);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scence);
 
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
