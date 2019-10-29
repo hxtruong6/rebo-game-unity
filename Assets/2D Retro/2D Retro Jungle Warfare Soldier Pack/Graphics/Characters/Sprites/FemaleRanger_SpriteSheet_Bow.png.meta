@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 221f81546b1ecd04998089d3b97eeabf
-timeCreated: 1445254739
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: FemaleRanger_Bow_idle_0
@@ -50,53 +48,78 @@ TextureImporter:
     21300086: FemaleRanger_Bow_hit_1
     21300088: FemaleRanger_Bow_hit_2
     21300090: FemaleRanger_Bow_hit_3
-  serializedVersion: 2
+  externalObjects: {}
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: FemaleRanger_Bow_idle_0
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -104,9 +127,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_idle_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c2067c9a5fa664a93be94169810c86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_idle_1
       rect:
         serializedVersion: 2
         x: 130
@@ -114,9 +147,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_idle_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a08656c899033418335c4cd2267689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_idle_2
       rect:
         serializedVersion: 2
         x: 260
@@ -124,9 +167,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_run_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e669e38a56a5d1e498a1b0474f1c7091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -134,9 +187,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_run_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43daf8995475ec843adb13b50bcee4c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_run_1
       rect:
         serializedVersion: 2
         x: 130
@@ -144,9 +207,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_run_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf3d78fa3d0d1e4ca1310dd7fe08478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_run_2
       rect:
         serializedVersion: 2
         x: 260
@@ -154,9 +227,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_run_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46dab85e2b75a4d459ff9c55cf5e31dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_run_3
       rect:
         serializedVersion: 2
         x: 390
@@ -164,9 +247,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_run_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428635dfd741ca34a98127dd407d98a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_run_4
       rect:
         serializedVersion: 2
         x: 520
@@ -174,9 +267,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_run_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6af1f87bc12cbf4480268aae939c32b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_run_5
       rect:
         serializedVersion: 2
         x: 650
@@ -184,9 +287,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_run_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ab13906323ee443bcbbb8222c406ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_run_6
       rect:
         serializedVersion: 2
         x: 780
@@ -194,9 +307,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_run_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d0402aa2ea54b49af4dc4f3096126a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_run_7
       rect:
         serializedVersion: 2
         x: 910
@@ -204,9 +327,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_run_8
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d1208ea9526c84ca94e2e6d5f4c695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_run_8
       rect:
         serializedVersion: 2
         x: 1040
@@ -214,9 +347,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jumpstart_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2b7828240e89046897e332e3484f57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jumpstart_0
       rect:
         serializedVersion: 2
         x: 0
@@ -224,9 +367,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jumpstart_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229d00a03a24efc479d4cee2ae7b2a25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jumpstart_1
       rect:
         serializedVersion: 2
         x: 130
@@ -234,9 +387,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jumpstart_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04fd93afc2bcec641899d54e92d194ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jumpstart_2
       rect:
         serializedVersion: 2
         x: 260
@@ -244,9 +407,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jump_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f66f185aac36b49ae14922c75a33cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jump_0
       rect:
         serializedVersion: 2
         x: 0
@@ -254,9 +427,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jump_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045f45e7cf4a58041b5d1017b21661b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jump_1
       rect:
         serializedVersion: 2
         x: 130
@@ -264,9 +447,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jump_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d475326d261254fbd3f1d90bf32948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jump_2
       rect:
         serializedVersion: 2
         x: 260
@@ -274,9 +467,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jump_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d06e454bc43ad14d96fd4f4bd338015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jump_3
       rect:
         serializedVersion: 2
         x: 390
@@ -284,9 +487,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jumpend_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e8315a35ab36947949079b61eefc6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jumpend_0
       rect:
         serializedVersion: 2
         x: 0
@@ -294,9 +507,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jumpend_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7b41f75fbe7cb4ab2d2537ad4d4f2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jumpend_1
       rect:
         serializedVersion: 2
         x: 130
@@ -304,9 +527,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_jumpend_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc3da6e9ec1f9c47856de4b2c26d9df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_jumpend_2
       rect:
         serializedVersion: 2
         x: 260
@@ -314,9 +547,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_shoot_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070ca48b9de39024fafb1bcdb31827b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_shoot_0
       rect:
         serializedVersion: 2
         x: 0
@@ -324,9 +567,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_shoot_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f94278d1719be044b5724b5e91c6e7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_shoot_1
       rect:
         serializedVersion: 2
         x: 130
@@ -334,9 +587,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_shoot_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3070f6b422ddb744cb884a194e85a4e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_shoot_2
       rect:
         serializedVersion: 2
         x: 260
@@ -344,9 +607,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_shoot_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbc1d11a95debd44b5824391f3f64df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_shoot_3
       rect:
         serializedVersion: 2
         x: 390
@@ -354,9 +627,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_shoot_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3481a13cb7b04764fb5d911b2921e4e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_shoot_4
       rect:
         serializedVersion: 2
         x: 520
@@ -364,9 +647,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_shoot_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5745607d1b9986349bb9476b40bfda09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_shoot_5
       rect:
         serializedVersion: 2
         x: 650
@@ -374,9 +667,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_shoot_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b937f9aff09e84d87f9c52025092b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_shoot_6
       rect:
         serializedVersion: 2
         x: 780
@@ -384,9 +687,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_shoot_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa309c1c77005c24aa3979ae5867605f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_shoot_7
       rect:
         serializedVersion: 2
         x: 910
@@ -394,9 +707,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_shoot_8
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a545dde222a149b44a80060e38435036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_shoot_8
       rect:
         serializedVersion: 2
         x: 1040
@@ -404,9 +727,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d83bab437fee94c91bfad89a0230e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_0
       rect:
         serializedVersion: 2
         x: 0
@@ -414,9 +747,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a422dee23f39a9b4f903e081de46ffa1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_1
       rect:
         serializedVersion: 2
         x: 130
@@ -424,9 +767,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b8b199468e3b84f92b828c3fbdea88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_2
       rect:
         serializedVersion: 2
         x: 260
@@ -434,9 +787,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7832343c027de7a4da6cc86a978f8d42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_3
       rect:
         serializedVersion: 2
         x: 390
@@ -444,9 +807,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867106f023441a74d89f3a039ac41fbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_4
       rect:
         serializedVersion: 2
         x: 520
@@ -454,9 +827,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32909ec226c4b314f8e479a2e67e3997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_5
       rect:
         serializedVersion: 2
         x: 650
@@ -464,9 +847,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfbd0ea81d52a84a9a1c9df4c67baf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_6
       rect:
         serializedVersion: 2
         x: 780
@@ -474,9 +867,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9907f2593b6f32949aac8a2a8d784b2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_7
       rect:
         serializedVersion: 2
         x: 0
@@ -484,9 +887,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_8
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f157550a2bb20349b913f05fe531bca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_8
       rect:
         serializedVersion: 2
         x: 130
@@ -494,9 +907,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_9
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c736fbad736aa4459eba6f77ccbd506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_9
       rect:
         serializedVersion: 2
         x: 260
@@ -504,9 +927,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_die_10
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ae9575c3621bc46a62e1695a31e9ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_die_10
       rect:
         serializedVersion: 2
         x: 390
@@ -514,9 +947,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_hit_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfac9156edab4434eba3cc55807ee8a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_hit_0
       rect:
         serializedVersion: 2
         x: 0
@@ -524,9 +967,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_hit_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd3eddc215ddfb4bb1870f5688f48a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_hit_1
       rect:
         serializedVersion: 2
         x: 130
@@ -534,9 +987,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_hit_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a84f29b1f39bb4d8394044ab2795b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_hit_2
       rect:
         serializedVersion: 2
         x: 260
@@ -544,9 +1007,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: FemaleRanger_Bow_hit_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ceecff628fa724f872938fa853c771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRanger_Bow_hit_3
       rect:
         serializedVersion: 2
         x: 390
@@ -554,9 +1027,28 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c593af5152f0a4784c9a1a52f89b3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

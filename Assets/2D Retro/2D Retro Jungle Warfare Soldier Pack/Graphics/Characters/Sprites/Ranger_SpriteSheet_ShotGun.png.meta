@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 1591cc0f4eccc944fa53cd156cc13f78
-timeCreated: 1445326059
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: Ranger_ShotGun_idle_0
@@ -49,53 +47,78 @@ TextureImporter:
     21300084: Ranger_ShotGun_hit_1
     21300086: Ranger_ShotGun_hit_2
     21300088: Ranger_ShotGun_hit_3
-  serializedVersion: 2
+  externalObjects: {}
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Ranger_ShotGun_idle_0
+    - serializedVersion: 2
+      name: Ranger_ShotGun_idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -103,9 +126,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_idle_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3af10e18a575643a69cc4bfcfd57d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_idle_1
       rect:
         serializedVersion: 2
         x: 130
@@ -113,9 +146,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_idle_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62b2110a6b623d4588e0528439d88eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_idle_2
       rect:
         serializedVersion: 2
         x: 260
@@ -123,9 +166,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_run_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9a1d89adfd39d4a8269835940507a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,9 +186,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_run_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef5ee71eba366a4eb1feeb2b62e566e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_run_1
       rect:
         serializedVersion: 2
         x: 130
@@ -143,9 +206,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_run_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c004f55247c9241b7b21488f13ab11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_run_2
       rect:
         serializedVersion: 2
         x: 260
@@ -153,9 +226,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_run_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227b883cc2559094bab8e5ab9fafe189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_run_3
       rect:
         serializedVersion: 2
         x: 390
@@ -163,9 +246,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_run_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be0b64ff419bf74f81315fbd7d6c612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_run_4
       rect:
         serializedVersion: 2
         x: 520
@@ -173,9 +266,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_run_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68badfbc8c6dfc4087c2eda75b4b792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_run_5
       rect:
         serializedVersion: 2
         x: 650
@@ -183,9 +286,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_run_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a860da1dc8d854ca2340e044dd2bb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_run_6
       rect:
         serializedVersion: 2
         x: 780
@@ -193,9 +306,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jumpstart_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30875ed0e2317714d98ce3b8347821ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jumpstart_0
       rect:
         serializedVersion: 2
         x: 0
@@ -203,9 +326,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jumpstart_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c85cf5bff79c0a4181a9a5008ff29ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jumpstart_1
       rect:
         serializedVersion: 2
         x: 130
@@ -213,9 +346,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jumpstart_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578e07a688136584ebcf4d9e010eb7c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jumpstart_2
       rect:
         serializedVersion: 2
         x: 260
@@ -223,9 +366,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jumpstart_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b1c417c3843a743a964cbd5216ea1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jumpstart_3
       rect:
         serializedVersion: 2
         x: 390
@@ -233,9 +386,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jumpstart_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25af9bf2dea74ad449bff46afc6684f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jumpstart_4
       rect:
         serializedVersion: 2
         x: 520
@@ -243,9 +406,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jump_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b403d635db70f4288bf61c77897832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jump_0
       rect:
         serializedVersion: 2
         x: 0
@@ -253,9 +426,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jump_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309f99bc122478d41a725009f45ceeaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jump_1
       rect:
         serializedVersion: 2
         x: 130
@@ -263,9 +446,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jump_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b65085cfe9f59489721b5679a1aba2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jump_2
       rect:
         serializedVersion: 2
         x: 260
@@ -273,9 +466,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jump_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f11ca6603f125d4db60c8268fa4e002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jump_3
       rect:
         serializedVersion: 2
         x: 390
@@ -283,9 +486,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jump_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef4207a610a94447a0be540edab7bd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jump_4
       rect:
         serializedVersion: 2
         x: 520
@@ -293,9 +506,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jumpend_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ec27686ade36041ad3534385d8ac19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jumpend_0
       rect:
         serializedVersion: 2
         x: 0
@@ -303,9 +526,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jumpend_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f3d444be68aec4faf553ff16158042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jumpend_1
       rect:
         serializedVersion: 2
         x: 130
@@ -313,9 +546,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_jumpend_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31bbfc6f388c0fe4da457b0ad8b42eab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_jumpend_2
       rect:
         serializedVersion: 2
         x: 260
@@ -323,9 +566,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_shoot_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065914d3259c91e4dbbe5aa5d18f9c88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_shoot_0
       rect:
         serializedVersion: 2
         x: 0
@@ -333,9 +586,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_shoot_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699a27c16663ea0498a37da159de2b0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_shoot_1
       rect:
         serializedVersion: 2
         x: 130
@@ -343,9 +606,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_shoot_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15983d34d0e05a64cb9855b5cd0e7165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_shoot_2
       rect:
         serializedVersion: 2
         x: 260
@@ -353,9 +626,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_shoot_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6ead20614f1984ebcf3c372383fbaf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_shoot_3
       rect:
         serializedVersion: 2
         x: 390
@@ -363,9 +646,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_shoot_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6078a65492fb6d42b92eb2d91752154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_shoot_4
       rect:
         serializedVersion: 2
         x: 520
@@ -373,9 +666,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_shoot_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efacfc207cef7c84987a1f4d4f309118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_shoot_5
       rect:
         serializedVersion: 2
         x: 650
@@ -383,9 +686,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_shoot_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314300b3e46ac8742ae976cef9b00d48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_shoot_6
       rect:
         serializedVersion: 2
         x: 780
@@ -393,9 +706,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16a09ecb877d824487d1f42ee2ffb8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_0
       rect:
         serializedVersion: 2
         x: 0
@@ -403,9 +726,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0912eab56995a884fbd85587b799a3a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_1
       rect:
         serializedVersion: 2
         x: 130
@@ -413,9 +746,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61154a93e956d1645a4ef3b00650dc14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_2
       rect:
         serializedVersion: 2
         x: 260
@@ -423,9 +766,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac30443c0bfec7a489ab4c39ff957557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_3
       rect:
         serializedVersion: 2
         x: 390
@@ -433,9 +786,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ffeb2dba7b62b41b13ba5acf72cb13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_4
       rect:
         serializedVersion: 2
         x: 520
@@ -443,9 +806,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300e71b4bd025e544851600f0b8dc2b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_5
       rect:
         serializedVersion: 2
         x: 650
@@ -453,9 +826,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ef5d0b85147ad4d84141868105c295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_6
       rect:
         serializedVersion: 2
         x: 780
@@ -463,9 +846,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5128fc31f589f4bad12f83a0ee9e17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_7
       rect:
         serializedVersion: 2
         x: 0
@@ -473,9 +866,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_8
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f918bbb8442e13143a00b1811433af67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_8
       rect:
         serializedVersion: 2
         x: 130
@@ -483,9 +886,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_9
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9e3a1fe037ce74394207f60dc4afa3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_9
       rect:
         serializedVersion: 2
         x: 260
@@ -493,9 +906,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_die_10
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907e1ada0276b3f4eb7225ec99c0f3a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_die_10
       rect:
         serializedVersion: 2
         x: 390
@@ -503,9 +926,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_hit_0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7236bd6578ff7344bac73bfea3ecb5bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_hit_0
       rect:
         serializedVersion: 2
         x: 0
@@ -513,9 +946,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_hit_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c3ff84e03d37e40b9f3186359cba75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_hit_1
       rect:
         serializedVersion: 2
         x: 130
@@ -523,9 +966,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_hit_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926504cb38f53eb4db97c3894f2380a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_hit_2
       rect:
         serializedVersion: 2
         x: 260
@@ -533,9 +986,19 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Ranger_ShotGun_hit_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122b0ef495354864ea5dc4c56799238e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_ShotGun_hit_3
       rect:
         serializedVersion: 2
         x: 390
@@ -543,9 +1006,28 @@ TextureImporter:
         width: 130
         height: 70
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf195fd1abfd5374e91024b6f9640b11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
