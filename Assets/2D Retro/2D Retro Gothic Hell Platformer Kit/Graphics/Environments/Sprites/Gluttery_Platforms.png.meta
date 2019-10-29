@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 20b2e7cc85c63824f8524f8a8860ee06
+timeCreated: 1444895187
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DG_PRP_TXT_Platform_0
+    21300002: DG_PRP_TXT_Platform_1
+    21300004: DG_PRP_TXT_Platform_2
+    21300006: DG_PRP_TXT_Platform_3
+    21300008: DG_PRP_TXT_Platform_4
+    21300010: DG_PRP_TXT_Platform_5
+    21300012: DG_PRP_TXT_Platform_6
+    21300014: DG_PRP_TXT_Platform_7
+    21300016: Gluttery_PRP_TXT_Platform_0
+    21300018: Gluttery_PRP_TXT_Platform_1
+    21300020: Gluttery_PRP_TXT_Platform_2
+    21300022: Gluttery_PRP_TXT_Platform_3
+    21300024: Gluttery_PRP_TXT_Platform_4
+    21300026: Gluttery_PRP_TXT_Platform_5
+    21300028: Gluttery_PRP_TXT_Platform_6
+    21300030: Gluttery_PRP_TXT_Platform_7
+    21300032: Gluttery_Platforms_0
+    21300034: Gluttery_Platforms_1
+    21300036: Gluttery_Platforms_2
+    21300038: Gluttery_Platforms_3
+    21300040: Gluttery_Platforms_4
+    21300042: Gluttery_Platforms_5
+    21300044: Gluttery_Platforms_6
+    21300046: Gluttery_Platforms_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Gluttery_Platforms_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 327
+        width: 163
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gluttery_Platforms_1
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 328
+        width: 161
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gluttery_Platforms_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 138
+        width: 160
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gluttery_Platforms_3
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 138
+        width: 162
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gluttery_Platforms_4
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 137
+        width: 161
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gluttery_Platforms_5
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 160
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gluttery_Platforms_6
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 0
+        width: 162
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gluttery_Platforms_7
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 161
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

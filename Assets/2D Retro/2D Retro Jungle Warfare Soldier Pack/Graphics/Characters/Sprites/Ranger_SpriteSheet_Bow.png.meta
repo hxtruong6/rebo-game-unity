@@ -1,0 +1,551 @@
+fileFormatVersion: 2
+guid: 4f4dc826ea9c9dd4fba06c63d9495309
+timeCreated: 1445259921
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ranger_Bow_idle_0
+    21300002: Ranger_Bow_idle_1
+    21300004: Ranger_Bow_idle_2
+    21300006: Ranger_Bow_run_0
+    21300008: Ranger_Bow_run_1
+    21300010: Ranger_Bow_run_2
+    21300012: Ranger_Bow_run_3
+    21300014: Ranger_Bow_run_4
+    21300016: Ranger_Bow_run_5
+    21300018: Ranger_Bow_run_6
+    21300020: Ranger_Bow_jumpstart_0
+    21300022: Ranger_Bow_jumpstart_1
+    21300024: Ranger_Bow_jumpstart_2
+    21300026: Ranger_Bow_jumpstart_3
+    21300028: Ranger_Bow_jumpstart_4
+    21300030: Ranger_Bow_jump_0
+    21300032: Ranger_Bow_jump_1
+    21300034: Ranger_Bow_jump_2
+    21300036: Ranger_Bow_jump_3
+    21300038: Ranger_Bow_jump_4
+    21300040: Ranger_Bow_jumpend_0
+    21300042: Ranger_Bow_jumpend_1
+    21300044: Ranger_Bow_jumpend_2
+    21300046: Ranger_Bow_shoot_0
+    21300048: Ranger_Bow_shoot_1
+    21300050: Ranger_Bow_shoot_2
+    21300052: Ranger_Bow_shoot_3
+    21300054: Ranger_Bow_shoot_4
+    21300056: Ranger_Bow_shoot_5
+    21300058: Ranger_Bow_shoot_6
+    21300060: Ranger_Bow_die_0
+    21300062: Ranger_Bow_die_1
+    21300064: Ranger_Bow_die_2
+    21300066: Ranger_Bow_die_3
+    21300068: Ranger_Bow_die_4
+    21300070: Ranger_Bow_die_5
+    21300072: Ranger_Bow_die_6
+    21300074: Ranger_Bow_die_7
+    21300076: Ranger_Bow_die_8
+    21300078: Ranger_Bow_die_9
+    21300080: Ranger_Bow_die_10
+    21300082: Ranger_Bow_hit_0
+    21300084: Ranger_Bow_hit_1
+    21300086: Ranger_Bow_hit_2
+    21300088: Ranger_Bow_hit_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Ranger_Bow_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_idle_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 560
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_idle_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 560
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_run_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_run_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 490
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_run_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 490
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_run_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 490
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_run_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 490
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_run_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 490
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_run_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 490
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jumpstart_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jumpstart_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 420
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jumpstart_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 420
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jumpstart_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 420
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jumpstart_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 420
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jump_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 350
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jump_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 350
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jump_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 350
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jump_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 350
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jumpend_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jumpend_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 280
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_jumpend_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 280
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_shoot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_shoot_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 210
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_shoot_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 210
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_shoot_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 210
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_shoot_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 210
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_shoot_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 210
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_shoot_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 210
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 140
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 140
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 140
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 140
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 140
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 140
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 70
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 70
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_die_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 70
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_hit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_hit_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_hit_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ranger_Bow_hit_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
