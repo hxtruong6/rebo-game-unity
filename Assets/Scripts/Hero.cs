@@ -12,6 +12,7 @@ public class Hero : MonoBehaviour
     public HealthBar health;
 
     private SpriteRenderer sprite;
+    private Damage damage;
 
     void Start()
     {
@@ -25,10 +26,15 @@ public class Hero : MonoBehaviour
 
     void Update()
     {
+        Interact();
+    }
+
+    private void Interact()
+    {
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
         {
             SetRun(true);
-            
+
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 sprite.flipX = false;
@@ -58,6 +64,7 @@ public class Hero : MonoBehaviour
         }
     }
 
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
