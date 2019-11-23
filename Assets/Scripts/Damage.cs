@@ -12,24 +12,8 @@ public class Damage : Object
         currentDamage = baseDamage;
     }
 
-    public float Attack()
+    public float GetCurrentDamage()
     {
         return currentDamage;
-    }
-
-    public void LevelUp(float damage)
-    {
-        if (damage > 0)
-        {
-            currentDamage += damage;
-        }
-    }
-
-    public void LevelDown(float damage)
-    {
-        if (damage > 0)
-        {
-            currentDamage -= damage;
-        }
     }
 }

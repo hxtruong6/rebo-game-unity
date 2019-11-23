@@ -18,10 +18,32 @@ public class LevelBar : MonoBehaviour
         levels = new Sprite[maxLevel + 1] { level0, level1, level2, level3, level4, level5, level6 };
     }
 
-    // Update is called once per frame
-    void Update()
+    private void LevelChanged()
     {
+        if (currentLevel > maxLevel)
+            currentLevel = maxLevel;
+        if (currentLevel < 0)
+            currentLevel = 0;
+
         transform.Find("Bar").GetComponent<SpriteRenderer>().sprite = levels[currentLevel];
+    }
+
+    public void LevelUp()
+    {
+        currentLevel++;
+        LevelChanged();
+    }
+
+    public void LevelDown()
+    {
+        currentLevel--;
+        LevelChanged();
+    }
+
+    public void Reset()
+    {
+        currentLevel = 0;
+        LevelChanged();
     }
 
     public float GetDamage()

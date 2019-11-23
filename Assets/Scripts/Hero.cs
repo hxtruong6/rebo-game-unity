@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,6 +23,7 @@ public class Hero : MonoBehaviour
     private const string RUN_ANIMATION = "isRunning";
     private const string SHOOT_ANIMATION = "isShooting";
     private const string JUMP_ANIMATION = "isJumping";
+    private const string FALL_ANIMATION = "isFalling";
 
     void Start()
     {
@@ -34,7 +36,6 @@ public class Hero : MonoBehaviour
         characterSprite = GetComponent<SpriteRenderer>();
 
         ChangeSuit();
-
     }
 
 
@@ -90,9 +91,20 @@ public class Hero : MonoBehaviour
 
         if (ChangeWeaponKey())
         {
-            weaponBar.ChangeToOtherWeapon();
-            ChangeSuit();
+            ChangeWeapon();
         }
+    }
+
+    public void BeAttacked(float damage)
+    {
+        SetFall_Animation();
+        health.BeAttacked(damage);
+    }
+
+    private void ChangeWeapon()
+    {
+        weaponBar.ChangeToOtherWeapon();
+        ChangeSuit();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -103,8 +115,9 @@ public class Hero : MonoBehaviour
                 jumpCount = 0;
                 SetJump_Animation(false);
                 break;
-            case "Enemy":
 
+            case "Enemy":
+                BeAttacked(100);
                 break;
         }
     }
@@ -117,6 +130,13 @@ public class Hero : MonoBehaviour
     private void SetRun_Animation(bool value)
     {
         GetComponent<Animator>().SetBool(RUN_ANIMATION, value);
+    }
+
+    private void SetFall_Animation()
+    {
+        GetComponent<Animator>().SetTrigger(FALL_ANIMATION);
+        SetJump_Animation(false);
+        SetRun_Animation(false);
     }
 
     private bool IsRunning()
@@ -169,7 +189,7 @@ public class Hero : MonoBehaviour
 
     private float TotalDamage()
     {
-        return damage.Attack();
+        return damage.GetCurrentDamage() + level.GetDamage();
     }
 
     private bool MoveLeftKey()

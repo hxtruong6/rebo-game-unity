@@ -17,26 +17,21 @@ public class WeaponBar : MonoBehaviour
         ChangeToWeapon(WeaponType.Machinegun);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ChangeToWeapon(WeaponType type)
     {
+        if (weapon != null)
+            weapon.gameObject.SetActive(false);
         for(int i=0; i<weapons.Length; i++)
             if (weapons[i].type == type)
-            {
-                weapons[i].gameObject.SetActive(true);
+            {                
                 weapon = weapons[i];
+                weapon.gameObject.SetActive(true);
+
                 spriteRenderer.sprite = weapon.GetComponent<SpriteRenderer>().sprite;
-                //break;
+
+                break;
             }
-            else
-            {
-                weapons[i].gameObject.SetActive(false);
-            }
+        
     }
 
     public void ChangeToOtherWeapon()

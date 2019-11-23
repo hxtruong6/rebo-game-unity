@@ -20,11 +20,6 @@ public class HealthBar : MonoBehaviour
         animator = GetComponentInParent<Animator>();
     }
 
-    //private void Update()
-    //{
-    //    ChangeHealth();
-    //}
-
     public void BeAttacked(float damage)
     {
         if (damage > 0)
@@ -35,7 +30,7 @@ public class HealthBar : MonoBehaviour
 
             if (characterDies)
             {
-                StartCoroutine(KillCharacter());
+                //StartCoroutine(KillCharacter());
             }
         }
     }
