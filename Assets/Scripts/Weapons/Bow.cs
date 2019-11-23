@@ -10,7 +10,7 @@ public class Bow : Weapon
         damage = 50;
         bulletForce = 7;
         bulletRange = 7;
-        type = WeaponType.BOW;
+        type = WeaponType.Bow;
     }
 
 }
