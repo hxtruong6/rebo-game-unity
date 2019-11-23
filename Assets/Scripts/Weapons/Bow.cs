@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bow : Weapon
 {
-    public Bow() : base(0.5f, 50f, 7f, WeaponType.BOW)
+    public Bow() : base(0.85f, 50f, 7f, WeaponType.BOW)
     {
     }
     void Start()
@@ -12,12 +12,6 @@ public class Bow : Weapon
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-   
     
+
 }

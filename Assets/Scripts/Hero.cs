@@ -33,15 +33,8 @@ public class Hero : MonoBehaviour
         
         characterSprite = GetComponent<SpriteRenderer>();
 
-        //RuntimeAnimatorController animatorOverrideController = weaponBar.GetWeapon().weaponSuit;
-        //GetComponent<Animator>().runtimeAnimatorController = animatorOverrideController;
-        //Debug.Log(animatorOverrideController);
+        ChangeSuit();
 
-        //RuntimeAnimatorController myController = GetComponent<Animator>().runtimeAnimatorController;
-        //AnimatorOverrideController myOverrideController = new AnimatorOverrideController();
-        //myOverrideController.runtimeAnimatorController = myController;
-        //myOverrideController["Ranger_Idle"] = a;
-        //GetComponent<Animator>().runtimeAnimatorController = myOverrideController;
     }
 
 
@@ -88,19 +81,19 @@ public class Hero : MonoBehaviour
 
         if (ShootKey())
         {
+            Debug.Log("key shoot");
             if (weaponBar.GetWeapon().CanShoot())
             {
+                Debug.Log("can shoot");
                 Shoot();                
             }     
         }
-        else
-        {
-            SetShoot_Animation(false);
-        }
+        
 
         if (ChangeWeaponKey())
         {
-           
+            weaponBar.ChangeToOtherWeapon();
+            ChangeSuit();
         }
     }
 
@@ -135,7 +128,7 @@ public class Hero : MonoBehaviour
 
     private void SetShoot_Animation(bool value)
     {
-        GetComponent<Animator>().SetBool(SHOOT_ANIMATION, value);
+        GetComponent<Animator>().SetTrigger(SHOOT_ANIMATION);
     }
 
     private void SetJump_Animation(bool value)
@@ -145,22 +138,36 @@ public class Hero : MonoBehaviour
 
     private void Shoot()
     {
+        weaponBar.GetWeapon().PrepareToShoot();
         // Set animation
         SetShoot_Animation(true);
+        
 
-        // Config Bullet
-        Vector2 bulletPos = transform.position;
-        Vector2 distanceBetweenBulletVsHero = new Vector2(1, 0);
-        if (characterSprite.flipX)
-        {
-            bulletPos -= distanceBetweenBulletVsHero;
-        }
-        else
-        {
-            bulletPos += distanceBetweenBulletVsHero;
-        }
+        StartCoroutine(ShootNow());
+    }
 
-        weaponBar.GetWeapon().Shoot(bulletPos, TotalDamage(), 0, characterSprite.flipX);    
+    IEnumerator ShootNow()
+    {
+        
+        yield return new WaitForSeconds(weaponBar.GetWeapon().GetPrepareTimeToShoot());
+
+        //if (weaponBar.GetWeapon().CanShoot())
+        {
+            // Config Bullet
+            Vector2 bulletPos = transform.position;
+            Vector2 distanceBetweenBulletVsHero = new Vector2(1, 0);
+            if (characterSprite.flipX)
+            {
+                bulletPos -= distanceBetweenBulletVsHero;
+            }
+            else
+            {
+                bulletPos += distanceBetweenBulletVsHero;
+            }
+
+            weaponBar.GetWeapon().Shoot(bulletPos, TotalDamage(), 0, characterSprite.flipX);
+        }
+        
     }
 
     private float TotalDamage()
@@ -190,9 +197,13 @@ public class Hero : MonoBehaviour
 
     private bool ChangeWeaponKey()
     {
-        return Input.GetKey(KeyCode.N);
+        return Input.GetKeyDown(KeyCode.N);
     }
 
+    private void ChangeSuit()
+    {
+        GetComponent<Animator>().runtimeAnimatorController = weaponBar.GetWeapon().weaponSuit;
+    }
     
     
 }

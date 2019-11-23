@@ -10,10 +10,10 @@ public class WeaponBar : MonoBehaviour
     public Weapon[] weapons;
     private Weapon weapon;
     private SpriteRenderer spriteRenderer;
-    void Start()
+
+    void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-
         ChangeToWeapon(WeaponType.MACHINEGUN);
     }
 
@@ -36,6 +36,16 @@ public class WeaponBar : MonoBehaviour
             else
             {
                 weapons[i].gameObject.SetActive(false);
+            }
+    }
+
+    public void ChangeToOtherWeapon()
+    {
+        for(int i=0; i<weapons.Length; i++)
+            if (weapon.type != weapons[i].type)
+            {
+                ChangeToWeapon(weapons[i].type);
+                break;
             }
     }
 
