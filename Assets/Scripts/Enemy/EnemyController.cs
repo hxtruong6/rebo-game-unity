@@ -21,7 +21,6 @@ public class EnemyController : MonoBehaviour
     [SerializeField] float MinDist;
     [SerializeField] float MovingSpeed = 0.5f;
     [SerializeField] float IdleTime = 4f;
-    [SerializeField] ENEMY_STATE InitState = ENEMY_STATE.IDLE;
     [SerializeField] float ChaseRange = 5f;
     public float ChasingSpeed = 0.2f;
     public float BoudingMinX;
@@ -36,7 +35,7 @@ public class EnemyController : MonoBehaviour
     bool isGrounded;
     float distanceToPlayer = float.MaxValue;
     Transform player;
-    private float thresholdAttack = 0.5f;
+    public float ThresholdAttack = 0.5f;
 
 
 
@@ -48,9 +47,10 @@ public class EnemyController : MonoBehaviour
         animator = GetComponent<Animator>();
         direction = MOVING_STATE.LEFT;
         timeCount = 0;
-        EnemyState = InitState;
+        EnemyState = ENEMY_STATE.IDLE;
         isGrounded = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
     }
 
     // Update is called once per frame
@@ -59,13 +59,6 @@ public class EnemyController : MonoBehaviour
         distanceToPlayer = Vector2.Distance(player.position, transform.position);
         switch (EnemyState)
         {
-            case ENEMY_STATE.FALL:
-                if (isGrounded)
-                {
-                    EnemyState = ENEMY_STATE.IDLE;
-                    animator.SetTrigger("fallEnd");
-                }
-                break;
             case ENEMY_STATE.IDLE:
                 if (distanceToPlayer <= ChaseRange)
                 {
@@ -92,7 +85,7 @@ public class EnemyController : MonoBehaviour
                 }
                 break;
             case ENEMY_STATE.ATTACK:
-                if (distanceToPlayer > thresholdAttack)
+                if (distanceToPlayer > ThresholdAttack)
                 {
                     EnemyState = ENEMY_STATE.CHASING;
                 }
@@ -102,7 +95,7 @@ public class EnemyController : MonoBehaviour
                 }
                 break;
             case ENEMY_STATE.CHASING:
-                if (distanceToPlayer <= thresholdAttack)
+                if (distanceToPlayer <= ThresholdAttack)
                 {
                     EnemyState = ENEMY_STATE.ATTACK;
                 }

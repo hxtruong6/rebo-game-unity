@@ -10,21 +10,20 @@ public class HealthBar : MonoBehaviour
     private float currentHealth;
     private Animator animator;
     //private float delay = 0.5f;
-    const string IS_DIE = "isDie";
 
 
     void Start()
     {
         bar = transform.Find("Bar");
         currentHealth = maxHealth;
+        SetSize(1.0f);
         animator = GetComponent<Animator>();
-
     }
 
-    private void Update()
-    {
-        ChangeHealth();
-    }
+    //private void Update()
+    //{
+    //    ChangeHealth();
+    //}
 
     public void BeAttacked(float damage)
     {
@@ -41,20 +40,18 @@ public class HealthBar : MonoBehaviour
 
             if (characterDies)
             {
-                //Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
                 StartCoroutine(KillCharacter());
             }
         }
     }
 
-
     IEnumerator KillCharacter()
     {
-        //var aniLength = gameObject.GetComponent<Animation>()[DEATH_TRIGGER].length;
-        animator.SetTrigger(IS_DIE);
+        var aniLength = gameObject.GetComponent<Animation>()[AnimationName.IS_DYING].length;
+        animator.SetTrigger(AnimationName.IS_DYING);
         AnimatorStateInfo currInfo = animator.GetCurrentAnimatorStateInfo(0);
         yield return new WaitForSeconds(currInfo.length);
-        gameObject.GetComponent<Collider2D>().enabled = false;
+        gameObject.GetComponent<Collider2D>().isTrigger = true;
         Destroy(gameObject);
     }
 

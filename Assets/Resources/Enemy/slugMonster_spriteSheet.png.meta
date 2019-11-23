@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 100de38e0e9dc4269bea64569414184d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: slugMonster_spriteSheet_0
+    21300002: slugMonster_spriteSheet_1
+    21300004: slugMonster_spriteSheet_2
+    21300006: slugMonster_spriteSheet_3
+    21300008: slugMonster_spriteSheet_5
+    21300010: slugMonster_spriteSheet_6
+    21300012: slugMonster_spriteSheet_7
+    21300014: slugMonster_spriteSheet_8
+    21300016: slugMonster_spriteSheet_9
+    21300018: slugMonster_spriteSheet_10
+    21300020: slugMonster_spriteSheet_11
+    21300022: slugMonster_spriteSheet_12
+    21300024: slugMonster_spriteSheet_15
+    21300026: slugMonster_spriteSheet_20
+    21300028: slugMonster_spriteSheet_21
+    21300030: slugMonster_spriteSheet_27
+    21300032: slugMonster_spriteSheet_29
+    21300034: slugMonster_spriteSheet_30
+    21300036: slugMonster_spriteSheet_31
+    21300038: slugMonster_spriteSheet_32
+    21300040: slugMonster_spriteSheet_33
+    21300042: slugMonster_spriteSheet_34
+    21300044: slugMonster_spriteSheet_35
+    21300046: slugMonster_spriteSheet_37
+    21300048: slugMonster_spriteSheet_39
+    21300050: slugMonster_spriteSheet_40
+    21300052: slugMonster_spriteSheet_41
+    21300054: slugMonster_spriteSheet_42
+    21300056: slugMonster_spriteSheet_43
+    21300058: slugMonster_spriteSheet_44
+    21300060: slugMonster_spriteSheet_45
+    21300062: slugMonster_spriteSheet_46
+    21300064: slugMonster_spriteSheet_47
+    21300066: slugMonster_spriteSheet_48
+    21300068: slugMonster_spriteSheet_49
+    21300070: slugMonster_spriteSheet_50
+    21300072: slugMonster_spriteSheet_51
+    21300074: slugMonster_spriteSheet_52
+    21300076: slugMonster_spriteSheet_53
+    21300078: slugMonster_spriteSheet_54
+    21300080: slugMonster_spriteSheet_55
+    21300082: slugMonster_spriteSheet_56
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 113
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abb65535c661d945926ab9c344fcf5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 176
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3851f394d703d9a418ead2ff6c314209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 176
+        width: 122
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8410da787955c429fc9d5e31eb88ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 176
+        width: 117
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345d3b195de8f074bb4858b9c612ebc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 176
+        width: 114
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264802c87cdcf3941853f7132903052b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 173
+        width: 98
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7314d0bc69c1f184cbf2870f6e972491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 173
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4c6082eb7fd4147aba3983ee89c46a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 173
+        width: 99
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adee1954eaf3bf0498eeaf02e8da5c8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 173
+        width: 98
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdaeb8470a831cd43ad5409dee83ae5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 177
+        width: 104
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364d0b28734572f45b030d68015a2b70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 177
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29053d249f1f3c14585419490369469d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 18
+        width: 138
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6eea10d786162d4ba3feb7e9fe36c96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 18
+        width: 123
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57422c7c14d77414c80308ed051ac8f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 8
+        width: 236
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da72f936a4ed0334882868c284bf988e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 11
+        width: 276
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2e7676e8c2db74bb66a7211735e461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 11
+        width: 297
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed71a2d28e3fca84ab41509da88b3c51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slugMonster_spriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 11
+        width: 338
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c6dd6365acf2148a5e2e5bdab890d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0989750cbeb4a45ad833144bf16cf8ce
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
