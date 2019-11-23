@@ -4,7 +4,9 @@ enum ENEMY_STATE
 {
     FALL,
     IDLE,
-    MOVING
+    MOVING,
+    ATTACK,
+    CHASING
 }
 
 enum MOVING_STATE
@@ -15,37 +17,46 @@ enum MOVING_STATE
 
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField] float maxDist;
-    [SerializeField] float minDist;
-    [SerializeField] float movingSpeed;
-    [SerializeField] float idleTime;
-    [SerializeField] ENEMY_STATE InitState;
+    [SerializeField] float MaxDist;
+    [SerializeField] float MinDist;
+    [SerializeField] float MovingSpeed = 0.5f;
+    [SerializeField] float IdleTime = 4f;
+    [SerializeField] ENEMY_STATE InitState = ENEMY_STATE.IDLE;
+    [SerializeField] float ChaseRange = 5f;
+    public float ChasingSpeed = 0.2f;
+    public float BoudingMinX;
+    public float BoudingMaxX;
+
     ENEMY_STATE EnemyState;
 
     float timeCount;
     SpriteRenderer _sprite;
     Animator animator;
-    Vector3 initialPosition;
     MOVING_STATE direction;
     bool isGrounded;
+    float distanceToPlayer = float.MaxValue;
+    Transform player;
+    private float thresholdAttack = 0.5f;
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         _sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        initialPosition = transform.position;
         direction = MOVING_STATE.LEFT;
-        //maxDist += transform.position.x;
-        //minDist -= transform.position.x;
-        movingSpeed = 0.3f;
         timeCount = 0;
         EnemyState = InitState;
         isGrounded = false;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
+        distanceToPlayer = Vector2.Distance(player.position, transform.position);
         switch (EnemyState)
         {
             case ENEMY_STATE.FALL:
@@ -56,19 +67,76 @@ public class EnemyController : MonoBehaviour
                 }
                 break;
             case ENEMY_STATE.IDLE:
-                timeCount += Time.deltaTime;
-                if (timeCount >= idleTime)
+                if (distanceToPlayer <= ChaseRange)
                 {
-                    EnemyState = ENEMY_STATE.MOVING;
-                    timeCount = 0;
+                    EnemyState = ENEMY_STATE.CHASING;
+                }
+                else
+                {
+                    timeCount += Time.deltaTime;
+                    if (timeCount >= IdleTime)
+                    {
+                        EnemyState = ENEMY_STATE.MOVING;
+                        timeCount = 0;
+                    }
                 }
                 break;
             case ENEMY_STATE.MOVING:
-                Moving();
+                if (distanceToPlayer <= ChaseRange)
+                {
+                    EnemyState = ENEMY_STATE.CHASING;
+                }
+                else
+                {
+                    Moving();
+                }
                 break;
+            case ENEMY_STATE.ATTACK:
+                if (distanceToPlayer > thresholdAttack)
+                {
+                    EnemyState = ENEMY_STATE.CHASING;
+                }
+                else
+                {
+                    animator.SetTrigger(AnimationName.IS_ATTACKING);
+                }
+                break;
+            case ENEMY_STATE.CHASING:
+                if (distanceToPlayer <= thresholdAttack)
+                {
+                    EnemyState = ENEMY_STATE.ATTACK;
+                }
+                else if (distanceToPlayer > ChaseRange)
+                {
+                    EnemyState = ENEMY_STATE.IDLE;
+                    animator.SetBool(AnimationName.IS_MOVING, false);
+                }
+                else
+                {
+                    animator.SetBool(AnimationName.IS_MOVING, true);
+                    ChasingState();
+                }
+
+                break;
+
             default:
                 break;
         }
+    }
+
+    private void ChasingState()
+    {
+        // TODO: if reach limit set idle
+        Vector3 direction = Vector3.left;
+        _sprite.flipX = false;
+        if (player.position.x > transform.position.x)
+        {
+            direction = Vector3.right;
+            _sprite.flipX = true;
+        }
+        Vector3 newPos = transform.position + direction * (MovingSpeed + ChasingSpeed) * Time.deltaTime;
+        newPos.x = Mathf.Clamp(newPos.x, BoudingMinX, BoudingMaxX);
+        transform.position = newPos;
     }
 
     private void Moving()
@@ -76,9 +144,9 @@ public class EnemyController : MonoBehaviour
         switch (direction)
         {
             case MOVING_STATE.LEFT:
-                if (transform.position.x >= minDist)
+                if (transform.position.x >= MinDist)
                 {
-                    transform.position += Vector3.right * -movingSpeed * Time.deltaTime;
+                    transform.position += Vector3.left * MovingSpeed * Time.deltaTime;
                     _sprite.flipX = false;
                     animator.SetBool("isMoving", true);
                 }
@@ -90,9 +158,9 @@ public class EnemyController : MonoBehaviour
                 }
                 break;
             case MOVING_STATE.RIGHT:
-                if (transform.position.x <= maxDist)
+                if (transform.position.x <= MaxDist)
                 {
-                    transform.position += Vector3.right * movingSpeed * Time.deltaTime;
+                    transform.position += Vector3.right * MovingSpeed * Time.deltaTime;
                     _sprite.flipX = true;
                     animator.SetBool("isMoving", true);
                 }
@@ -114,12 +182,12 @@ public class EnemyController : MonoBehaviour
         {
             isGrounded = true;
         }
-       
+
 
     }
 
     public void BePushed(float force)
     {
-            
+
     }
 }
