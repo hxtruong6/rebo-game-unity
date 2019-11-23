@@ -41,7 +41,8 @@ public class Weapon : MonoBehaviour
 
     public Bullet Shoot(Vector2 startPos, float additionalDamage, float additionalForce, bool flipX)
     {
-
+        GetComponent<SoundManager>().PlayWeaponSound(type);
+       
         nextShootTime = Time.time + fireRate;
 
         Bullet bulletClone = Instantiate(bullet, startPos, Quaternion.identity);

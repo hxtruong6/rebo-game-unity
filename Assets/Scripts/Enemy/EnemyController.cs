@@ -15,8 +15,15 @@ enum MOVING_STATE
     RIGHT
 }
 
+public enum EnemyType
+{
+    Solider,
+    Slug
+}
+
 public class EnemyController : MonoBehaviour
 {
+    public EnemyType EnemyType;
     [SerializeField] float MaxDist;
     [SerializeField] float MinDist;
     [SerializeField] float MovingSpeed = 0.5f;
@@ -25,6 +32,7 @@ public class EnemyController : MonoBehaviour
     public float ChasingSpeed = 0.2f;
     public float BoudingMinX;
     public float BoudingMaxX;
+
 
     ENEMY_STATE EnemyState;
 
@@ -37,6 +45,7 @@ public class EnemyController : MonoBehaviour
     Transform player;
     public float ThresholdAttack = 0.5f;
     HealthBar healthBar;
+    private SoundManager _soundManager;
 
 
     // Start is called before the first frame update
@@ -50,6 +59,7 @@ public class EnemyController : MonoBehaviour
         isGrounded = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         healthBar = GetComponentInChildren<HealthBar>();
+        _soundManager = GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -190,6 +200,8 @@ public class EnemyController : MonoBehaviour
 
     public void BeingAttacked(float damage)
     {
+        GetComponent<SoundManager>().PlayEnemySound(SoundType.BeAttacked, EnemyType);
+
         animator.SetTrigger(AnimationName.IS_ATTACKED);
         GetComponentInChildren<HealthBar>().BeAttacked(damage);
     }
