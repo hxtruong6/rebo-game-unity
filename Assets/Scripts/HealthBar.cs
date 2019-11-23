@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour
     public float maxHealth = 100;
     private float currentHealth;
     private Animator animator;
-    //private float delay = 0.5f;
+    public float DestroyDelayTime = 0.5f;
 
 
     void Start()
@@ -17,7 +17,7 @@ public class HealthBar : MonoBehaviour
         bar = transform.Find("Bar");
         currentHealth = maxHealth;
         SetSize(1.0f);
-        animator = GetComponent<Animator>();
+        animator = GetComponentInParent<Animator>();
     }
 
     //private void Update()
@@ -44,12 +44,12 @@ public class HealthBar : MonoBehaviour
 
     IEnumerator KillCharacter()
     {
-        var aniLength = gameObject.GetComponent<Animation>()[AnimationName.IS_DYING].length;
+        GetComponent<ChildObjects>().SetActive(false);
         animator.SetTrigger(AnimationName.IS_DYING);
         AnimatorStateInfo currInfo = animator.GetCurrentAnimatorStateInfo(0);
-        yield return new WaitForSeconds(currInfo.length);
-        gameObject.GetComponent<Collider2D>().isTrigger = true;
-        Destroy(gameObject);
+        yield return new WaitForSeconds(currInfo.length + DestroyDelayTime);
+        gameObject.GetComponentInParent<Collider2D>().isTrigger = true;
+        Destroy(transform.parent.gameObject);
     }
 
 
@@ -64,15 +64,6 @@ public class HealthBar : MonoBehaviour
 
     private void ChangeHealth()
     {
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-        else if (currentHealth < 0)
-        {
-            currentHealth = 0;
-        }
-
         float bloodPecent = currentHealth / maxHealth;
         SetSize(bloodPecent);
     }
@@ -90,6 +81,11 @@ public class HealthBar : MonoBehaviour
     private void SetColor(Color color)
     {
         bar.Find("BarSprite").GetComponent<SpriteRenderer>().color = color;
+    }
+
+    public bool IsAlive()
+    {
+        return currentHealth > 0;
     }
 
 
