@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Mathf.Abs(transform.position.x - originalPos.x) >= 7)
+        if (Mathf.Abs(transform.position.x - originalPos.x) >= 20)
         {
             Destroy(gameObject);
         }

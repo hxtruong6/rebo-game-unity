@@ -36,8 +36,7 @@ public class EnemyController : MonoBehaviour
     float distanceToPlayer = float.MaxValue;
     Transform player;
     public float ThresholdAttack = 0.5f;
-
-
+    HealthBar healthBar;
 
 
     // Start is called before the first frame update
@@ -50,12 +49,14 @@ public class EnemyController : MonoBehaviour
         EnemyState = ENEMY_STATE.IDLE;
         isGrounded = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        healthBar = GetComponentInChildren<HealthBar>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(healthBar.IsAlive());
+        if (!healthBar.IsAlive()) return;
         distanceToPlayer = Vector2.Distance(player.position, transform.position);
         switch (EnemyState)
         {
@@ -73,6 +74,7 @@ public class EnemyController : MonoBehaviour
                         timeCount = 0;
                     }
                 }
+
                 break;
             case ENEMY_STATE.MOVING:
                 if (distanceToPlayer <= ChaseRange)
@@ -83,6 +85,7 @@ public class EnemyController : MonoBehaviour
                 {
                     Moving();
                 }
+
                 break;
             case ENEMY_STATE.ATTACK:
                 if (distanceToPlayer > ThresholdAttack)
@@ -93,6 +96,7 @@ public class EnemyController : MonoBehaviour
                 {
                     animator.SetTrigger(AnimationName.IS_ATTACKING);
                 }
+
                 break;
             case ENEMY_STATE.CHASING:
                 if (distanceToPlayer <= ThresholdAttack)
@@ -120,14 +124,15 @@ public class EnemyController : MonoBehaviour
     private void ChasingState()
     {
         // TODO: if reach limit set idle
-        Vector3 direction = Vector3.left;
+        Vector3 vectorDirection = Vector3.left;
         _sprite.flipX = false;
         if (player.position.x > transform.position.x)
         {
-            direction = Vector3.right;
+            vectorDirection = Vector3.right;
             _sprite.flipX = true;
         }
-        Vector3 newPos = transform.position + direction * (MovingSpeed + ChasingSpeed) * Time.deltaTime;
+
+        Vector3 newPos = transform.position + vectorDirection * (MovingSpeed + ChasingSpeed) * Time.deltaTime;
         newPos.x = Mathf.Clamp(newPos.x, BoudingMinX, BoudingMaxX);
         transform.position = newPos;
     }
@@ -149,6 +154,7 @@ public class EnemyController : MonoBehaviour
                     EnemyState = ENEMY_STATE.IDLE;
                     animator.SetBool("isMoving", false);
                 }
+
                 break;
             case MOVING_STATE.RIGHT:
                 if (transform.position.x <= MaxDist)
@@ -163,6 +169,7 @@ public class EnemyController : MonoBehaviour
                     EnemyState = ENEMY_STATE.IDLE;
                     animator.SetBool("isMoving", false);
                 }
+
                 break;
             default:
                 break;
@@ -175,17 +182,15 @@ public class EnemyController : MonoBehaviour
         {
             isGrounded = true;
         }
-
-
     }
 
     public void BePushed(float force)
     {
-
     }
 
     public void BeingAttacked(float damage)
     {
+        animator.SetTrigger(AnimationName.IS_ATTACKED);
         GetComponentInChildren<HealthBar>().BeAttacked(damage);
     }
 }
