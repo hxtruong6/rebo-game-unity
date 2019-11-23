@@ -31,8 +31,6 @@ public class HealthBar : MonoBehaviour
         {
             bool characterDies = (currentHealth - damage) <= 0;
             currentHealth = Mathf.Clamp(currentHealth - damage, 0f, maxHealth);
-            
-
             ChangeHealth();
 
             if (characterDies)

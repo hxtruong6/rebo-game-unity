@@ -17,34 +17,53 @@ public class Weapon : MonoBehaviour
     public WeaponType type;
     public Bullet bullet;
     public RuntimeAnimatorController weaponSuit;
-
+    float timeCount = 0;
     private float nextShootTime;
+
+    private void Start()
+    {
+        timeCount = 0;
+    }
 
     public Weapon(float rate, float damage, float bulletForce, WeaponType type)
     {
-        
-        fireRate = rate;
+       
+        this.fireRate = rate;
         this.damage = damage;
         this.bulletForce = bulletForce;
         this.type = type;
     }
 
+    private void Update()
+    {
+        timeCount += Time.deltaTime;
+        Debug.Log(timeCount);
+
+    }
+
     public bool CanShoot()
     {
-        if (Time.time > nextShootTime)
+     
+        
+        if (timeCount > 2 )
         {
+            timeCount = 0;
             return true;
         }
         return false;
     }
 
-
-    public Bullet Shoot(Vector2 startPos, float additionalDamage, float additionalForce, bool flipX)
+    public void PrepareToShoot()
     {
+        //TODO: move to shoot
         GetComponent<SoundManager>().PlayWeaponSound(type);
        
         nextShootTime = Time.time + fireRate;
+    }
 
+    public Bullet Shoot(Vector2 startPos, float additionalDamage, float additionalForce, bool flipX)
+    {
+        //nextShootTime = Time.time + fireRate;
         Bullet bulletClone = Instantiate(bullet, startPos, Quaternion.identity);
 
         float force = this.bulletForce + additionalForce;
@@ -59,4 +78,8 @@ public class Weapon : MonoBehaviour
         return bullet;
     }
 
+    public float GetPrepareTimeToShoot()
+    {
+        return 2;
+    }
 }

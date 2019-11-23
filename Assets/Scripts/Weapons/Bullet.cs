@@ -39,11 +39,11 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Damage :"+ this.damage);
+ 
         switch (collision.gameObject.tag)
         {
             case "Enemy":
-                collision.gameObject.GetComponent<EnemyController>().BeingAttacked(this.damage);
+                //collision.gameObject.GetComponent<EnemyController>().BeingAttacked(this.damage);
                 break;
             
         }
