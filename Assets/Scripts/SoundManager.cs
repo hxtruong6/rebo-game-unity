@@ -115,9 +115,9 @@ public class SoundManager : MonoBehaviour
     {
         switch (type)
         {
-            case WeaponType.MACHINEGUN:
+            case WeaponType.Machinegun:
                 break;
-            case WeaponType.BOW:
+            case WeaponType.Bow:
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, "No weapon type");
