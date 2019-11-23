@@ -104,7 +104,7 @@ public class SoundManager : MonoBehaviour
             case EnemyType.Solider:
             case EnemyType.Slug:
             default:
-                audioSource.PlayOneShot(EnemyAttackSound);
+                audioSource.PlayOneShot(EnemyBeAttackedSound);
                 break;
 //                throw new ArgumentOutOfRangeException(nameof(type), type, null);
         }
