@@ -16,11 +16,13 @@ public class Weapon : MonoBehaviour
 
     public WeaponType type;
     public Bullet bullet;
+    public RuntimeAnimatorController weaponSuit;
 
     private float nextShootTime;
 
     public Weapon(float rate, float damage, float bulletForce, WeaponType type)
     {
+        
         fireRate = rate;
         this.damage = damage;
         this.bulletForce = bulletForce;
@@ -39,6 +41,7 @@ public class Weapon : MonoBehaviour
 
     public Bullet Shoot(Vector2 startPos, float additionalDamage, float additionalForce, bool flipX)
     {
+
         nextShootTime = Time.time + fireRate;
 
         Bullet bulletClone = Instantiate(bullet, startPos, Quaternion.identity);
@@ -54,4 +57,5 @@ public class Weapon : MonoBehaviour
 
         return bullet;
     }
+
 }

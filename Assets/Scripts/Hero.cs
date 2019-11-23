@@ -12,23 +12,36 @@ public class Hero : MonoBehaviour
     public LevelBar level;
     public HealthBar health;
     public WeaponBar weaponBar;
-    
+
+
+    public AnimationClip a;
+
     private SpriteRenderer characterSprite;
     private Damage damage;
 
     private const string RUN_ANIMATION = "isRunning";
     private const string SHOOT_ANIMATION = "isShooting";
+    private const string JUMP_ANIMATION = "isJumping";
 
     void Start()
     {
         speed = 7f;
         jumpSpeed = 200f;
         jumpCount = 0;
-        //GetComponent<Animator>().GetComponentInParent<AnimatorControllerParameter>
-        
+
         damage = new Damage();
         
         characterSprite = GetComponent<SpriteRenderer>();
+
+        //RuntimeAnimatorController animatorOverrideController = weaponBar.GetWeapon().weaponSuit;
+        //GetComponent<Animator>().runtimeAnimatorController = animatorOverrideController;
+        //Debug.Log(animatorOverrideController);
+
+        //RuntimeAnimatorController myController = GetComponent<Animator>().runtimeAnimatorController;
+        //AnimatorOverrideController myOverrideController = new AnimatorOverrideController();
+        //myOverrideController.runtimeAnimatorController = myController;
+        //myOverrideController["Ranger_Idle"] = a;
+        //GetComponent<Animator>().runtimeAnimatorController = myOverrideController;
     }
 
 
@@ -42,7 +55,7 @@ public class Hero : MonoBehaviour
         if (MoveLeftKey() || MoveRightKey())
         {
             SetRun_Animation(true);
-
+                
             if (MoveRightKey())
             {
                 characterSprite.flipX = false;
@@ -66,10 +79,12 @@ public class Hero : MonoBehaviour
         {
             if (jumpCount < maxJumpCount)
             {
+                SetJump_Animation(true);
                 jumpCount++;
                 Move(new Vector2(0, jumpSpeed));
-            }
+            }   
         }
+        
 
         if (ShootKey())
         {
@@ -85,7 +100,7 @@ public class Hero : MonoBehaviour
 
         if (ChangeWeaponKey())
         {
-
+           
         }
     }
 
@@ -95,6 +110,7 @@ public class Hero : MonoBehaviour
         {
             case "Ground":
                 jumpCount = 0;
+                SetJump_Animation(false);
                 break;
             case "Enemy":
 
@@ -122,8 +138,15 @@ public class Hero : MonoBehaviour
         GetComponent<Animator>().SetBool(SHOOT_ANIMATION, value);
     }
 
+    private void SetJump_Animation(bool value)
+    {
+        GetComponent<Animator>().SetBool(JUMP_ANIMATION, value);
+    }
+
     private void Shoot()
     {
+        // Set animation
+        SetShoot_Animation(true);
 
         // Config Bullet
         Vector2 bulletPos = transform.position;
@@ -137,10 +160,7 @@ public class Hero : MonoBehaviour
             bulletPos += distanceBetweenBulletVsHero;
         }
 
-        weaponBar.GetWeapon().Shoot(bulletPos, TotalDamage(), 0, characterSprite.flipX);
-
-        // Set animation
-        SetShoot_Animation(true);
+        weaponBar.GetWeapon().Shoot(bulletPos, TotalDamage(), 0, characterSprite.flipX);    
     }
 
     private float TotalDamage()

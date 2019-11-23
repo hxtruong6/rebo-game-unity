@@ -1,7 +1,99 @@
 fileFormatVersion: 2
 guid: 9bfcbe11baaf34d0e9e2afb42433664f
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Ranger_SpriteSheet_Bow_0
+    21300002: Ranger_SpriteSheet_Bow_1
+    21300004: Ranger_SpriteSheet_Bow_2
+    21300006: Ranger_SpriteSheet_Bow_3
+    21300008: Ranger_SpriteSheet_Bow_4
+    21300010: Ranger_SpriteSheet_Bow_5
+    21300012: Ranger_SpriteSheet_Bow_6
+    21300014: Ranger_SpriteSheet_Bow_7
+    21300016: Ranger_SpriteSheet_Bow_8
+    21300018: Ranger_SpriteSheet_Bow_9
+    21300020: Ranger_SpriteSheet_Bow_10
+    21300022: Ranger_SpriteSheet_Bow_11
+    21300024: Ranger_SpriteSheet_Bow_12
+    21300026: Ranger_SpriteSheet_Bow_13
+    21300028: Ranger_SpriteSheet_Bow_14
+    21300030: Ranger_SpriteSheet_Bow_15
+    21300032: Ranger_SpriteSheet_Bow_16
+    21300034: Ranger_SpriteSheet_Bow_17
+    21300036: Ranger_SpriteSheet_Bow_18
+    21300038: Ranger_SpriteSheet_Bow_19
+    21300040: Ranger_SpriteSheet_Bow_20
+    21300042: Ranger_SpriteSheet_Bow_21
+    21300044: Ranger_SpriteSheet_Bow_22
+    21300046: Ranger_SpriteSheet_Bow_23
+    21300048: Ranger_SpriteSheet_Bow_24
+    21300050: Ranger_SpriteSheet_Bow_25
+    21300052: Ranger_SpriteSheet_Bow_26
+    21300054: Ranger_SpriteSheet_Bow_27
+    21300056: Ranger_SpriteSheet_Bow_28
+    21300058: Ranger_SpriteSheet_Bow_29
+    21300060: Ranger_SpriteSheet_Bow_30
+    21300062: Ranger_SpriteSheet_Bow_31
+    21300064: Ranger_SpriteSheet_Bow_32
+    21300066: Ranger_SpriteSheet_Bow_33
+    21300068: Ranger_SpriteSheet_Bow_34
+    21300070: Ranger_SpriteSheet_Bow_35
+    21300072: Ranger_SpriteSheet_Bow_36
+    21300074: Ranger_SpriteSheet_Bow_37
+    21300076: Ranger_SpriteSheet_Bow_38
+    21300078: Ranger_SpriteSheet_Bow_39
+    21300080: Ranger_SpriteSheet_Bow_40
+    21300082: Ranger_SpriteSheet_Bow_41
+    21300084: Ranger_SpriteSheet_Bow_42
+    21300086: Ranger_SpriteSheet_Bow_43
+    21300088: Ranger_SpriteSheet_Bow_44
+    21300090: Ranger_SpriteSheet_Bow_45
+    21300092: Ranger_SpriteSheet_Bow_46
+    21300094: Ranger_SpriteSheet_Bow_47
+    21300096: Ranger_SpriteSheet_Bow_48
+    21300098: Ranger_SpriteSheet_Bow_49
+    21300100: Ranger_SpriteSheet_Bow_50
+    21300102: Ranger_SpriteSheet_Bow_51
+    21300104: Ranger_SpriteSheet_Bow_52
+    21300106: Ranger_SpriteSheet_Bow_53
+    21300108: Ranger_SpriteSheet_Bow_54
+    21300110: Ranger_SpriteSheet_Bow_55
+    21300112: Ranger_SpriteSheet_Bow_56
+    21300114: Ranger_SpriteSheet_Bow_57
+    21300116: Ranger_SpriteSheet_Bow_58
+    21300118: Ranger_SpriteSheet_Bow_59
+    21300120: Ranger_SpriteSheet_Bow_60
+    21300122: Ranger_SpriteSheet_Bow_61
+    21300124: Ranger_SpriteSheet_Bow_62
+    21300126: Ranger_SpriteSheet_Bow_63
+    21300128: Ranger_SpriteSheet_Bow_64
+    21300130: Ranger_SpriteSheet_Bow_65
+    21300132: Ranger_SpriteSheet_Bow_66
+    21300134: Ranger_SpriteSheet_Bow_67
+    21300136: Ranger_SpriteSheet_Bow_68
+    21300138: Ranger_SpriteSheet_Bow_69
+    21300140: Ranger_SpriteSheet_Bow_70
+    21300142: Ranger_SpriteSheet_Bow_71
+    21300144: Ranger_SpriteSheet_Bow_72
+    21300146: Ranger_SpriteSheet_Bow_73
+    21300148: Ranger_SpriteSheet_Bow_74
+    21300150: Ranger_SpriteSheet_Bow_75
+    21300152: Ranger_SpriteSheet_Bow_76
+    21300154: Ranger_SpriteSheet_Bow_77
+    21300156: Ranger_SpriteSheet_Bow_78
+    21300158: Ranger_SpriteSheet_Bow_79
+    21300160: Ranger_SpriteSheet_Bow_80
+    21300162: Ranger_SpriteSheet_Bow_81
+    21300164: Ranger_SpriteSheet_Bow_82
+    21300166: Ranger_SpriteSheet_Bow_83
+    21300168: Ranger_SpriteSheet_Bow_84
+    21300170: Ranger_SpriteSheet_Bow_85
+    21300172: Ranger_SpriteSheet_Bow_86
+    21300174: Ranger_SpriteSheet_Bow_87
+    21300176: Ranger_SpriteSheet_Bow_88
+    21300178: Ranger_SpriteSheet_Bow_89
+    21300180: Ranger_SpriteSheet_Bow_90
+    21300182: Ranger_SpriteSheet_Bow_91
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +132,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +161,1860 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 567
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61376a128306f4b21a2608140a5324ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 567
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca305668e04394866b6dc24d3e884f80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 567
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177cc65d52b7f4bcf9f60189d9178127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 501
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e737b0eac73c479e8074fee9cf89859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 499
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61b856efcb1d4085ac5464a721ede1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 499
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd4bd60635c44d66b9ede559a7082a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 499
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc75c02e0561d4a4a8447544d8145bf1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_7
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 501
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24189394c457443dbeb1e920510fd87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_8
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 501
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71087d5376ba244d688c028784d5a331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_9
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 499
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0c8554dd5a948de840a0e1c529373c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 428
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4130c05f591c54dbeb7982aa5ad28122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_11
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 429
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988a96dfae8554ba29e61c0a3f339934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_12
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 429
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d269d0862df4473bf52ab4aa8a2a9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_13
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 428
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f7dfd6a0f35466494ebb4773a6bcd9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_14
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 429
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61ec190c48eb4e60bd9e99945cfe32e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_15
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 362
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2874ee607de0c41cfb48bbedea55abad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_16
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 362
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f847c4f8d0184094b2652d9f167ae36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 362
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf78dc435bb64f0c9771dfbe579fac9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_18
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 362
+        width: 57
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2d114196e96432c976e6f90937a4cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_19
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 362
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5fb6b36a8744d8c88d35afafd403ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_20
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 289
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d9225ba8d084a0ea93c8eecdc45ebf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 287
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d06eb5b8ed1e44b9bef68c3db1abd9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_22
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 289
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823535e8f3b8d4670a804e9e92375cff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_23
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 221
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77b2d369e3f84ce4938f46db06fb579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_24
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 219
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e585ee3915d64950a93076ec0202451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_25
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 219
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97be03665477541f191da72aec747b29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_26
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 219
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d97e3deb348248ee9882bffbc9abf0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_27
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 214
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad64a30c7daf4397a93202730e83466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_28
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 221
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7adb37a42b8427699d532e56252ac3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_29
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 219
+        width: 95
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302e66f25a72a4aca92311558b872fd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_30
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 149
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86a18a5074f6469ea878caf16abb830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_31
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 149
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950da67b4617346d9bdfd11907f9f81f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_32
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 145
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46216180d073c45ed99a725e74f11d6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_33
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 159
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbd6c15403944d748e249061330e862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_34
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 190
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d8e9febe3424c4caa7a35ca458ab2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_35
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 150
+        width: 69
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca852dafba9aa4fccaf784b6edecc920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_36
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 200
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179ff4e70b6d74faeb8ba696046eb3c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 197
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba71efb28efa14ad38e539b9fb761dfb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_38
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 194
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fe791b575dd460cb0383082c57b02c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_39
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 188
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a480fc7beac40378b0b45fff00afe3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_40
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 150
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4805997c2a9f4417181b3c558fa68378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_41
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 166
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93127c47692394ec3aede049ce06e997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_42
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 166
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd413b11f77d94b2fb9d262972924936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_43
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 173
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab31ce9200684b7caab4d21ddca4c53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_44
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 145
+        width: 92
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713c6ca7fdfc84fc7ba7926c72b314e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_45
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 141
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30ee1c35fd3e4c08a7f62bfc6268cf8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_46
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 164
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f95461614e194e78a317052af06e074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_47
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 149
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391989c7799f94656953f895b1af50b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 78
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa02da472ae7b4acc9ffa495314040ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_49
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 72
+        width: 91
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7253a89a0a78f4fe28a90c3bc370385b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_50
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 111
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1583e9992f904484eab439f29c050c81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_51
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 72
+        width: 133
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67bffaafda0d405f937908d8294830e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_52
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 83
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e63f035d6c744222a984e828219a41c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_53
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 83
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069fdcbbae7034355baf23b38419a89e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_54
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 72
+        width: 95
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529e386fd2bec4dabbeb331ec364f46f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_55
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 72
+        width: 95
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb2e50fc806e488eac73a4325fc8d6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_56
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 72
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef815061f23f54facba178611863744b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 72
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865de70167956474788e1963a9d5d729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_58
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 68
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2528749d4e44b88a87d4a8662f8d67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_59
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 72
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a5b9ed4427e47cabb27fb0efb96ecd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_60
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 68
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79025f6c2423d4d34a21426f6f6f5a95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_61
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 72
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8732b68a4878d4fde831ad54a0bc7dd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_62
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 72
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d511021dc6b44d36831573f38d889ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_63
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 72
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54a8fadef8fa4392b8c4083c83429a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_64
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 10
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c49b7d7a9384d408d8b3afa2dc15e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_65
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 9
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fc4eec7ee394cbebb9c8fa88554bbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_66
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 9
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d58d9c081e6442da846876ff686a839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_67
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 9
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7340b17d4bd794e22af4a1d9cfa0f5d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_68
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 50
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147d5c21cbe9040f2b6cbeff6e007a31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_69
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 50
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d17f22cbff35468f98f61d23be4f531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_70
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 50
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f620c17b17575408da424ac34ff26681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_71
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 46
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72418f0dcad9641c3ab8a4a3924ef51e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_72
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 50
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93edb75a56114ae1a29583f96f32f8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_73
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 50
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4580ef77804499d91b61bd52655060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_74
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 50
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0172aef355c7b45cda66f556fbde4647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_75
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 46
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c45537e49c14abca5d0c61b268f62e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_76
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 27
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7f25c83de3a4ee29451965a9e5c58b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_77
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 27
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70bf76679aeb4c70aeb78277c1506ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_78
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 27
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4055eb83d3f944a729ab7ee52a171275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_79
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 27
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7759bc1c9b9414ec280d79b58f87c49a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_80
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 27
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b673b8e1edf4dfd872c1cde18fe325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_81
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 4
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff28b2697294d4213a02cc78db8248de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_82
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 4
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064fd306910484e48896192502daa437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_83
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 4
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462cc5819446b49aaba9014e16c71efa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_84
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 4
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a609016a2c49f4d539dbba20ee5b7cc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_85
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 4
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c0a114f4ba0466a8cd1243f54b0254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_86
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 4
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18881ebde60b14c6898394bed26fcec0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_87
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 4
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533a00dc477f34d8197313439fc06856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_88
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 4
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637c847877b5f467abef83041fb86913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_89
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 4
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a612add2385434749bb434bffb596de1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_90
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 4
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d065ad5086191470fb7bf24336d3bdac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_SpriteSheet_Bow_91
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 4
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c498984a70eb24f888bfd59633c116d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
