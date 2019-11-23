@@ -183,4 +183,9 @@ public class EnemyController : MonoBehaviour
     {
 
     }
+
+    public void BeingAttacked(float damage)
+    {
+        GetComponentInChildren<HealthBar>().BeAttacked(damage);
+    }
 }
