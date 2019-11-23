@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Bow : Weapon
 {
-    public Bow() : base(0.85f, 50f, 7f, WeaponType.BOW)
+    private void Awake()
     {
+        fireRate = 0.4f;
+        damage = 50;
+        bulletForce = 7;
+        bulletRange = 7;
+        type = WeaponType.BOW;
     }
-    void Start()
-    {
-        
-    }
-
-    
 
 }

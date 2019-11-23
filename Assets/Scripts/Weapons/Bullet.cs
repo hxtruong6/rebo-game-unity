@@ -7,18 +7,25 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     public float damage;
     public float force;
+    public float range;
     public Vector2 originalPos;
-    
-    public void SetAtributes(Vector2 pos, float damage, float force)
+
+    private void Awake()
+    {
+        range = 1;
+    }
+
+    public void SetAtributes(Vector2 pos, float damage, float force, float range)
     {
         this.originalPos = pos;
         transform.position = this.originalPos;
         this.damage = damage;
         this.force = force;
+        this.range = range;
     }
-  
+
     void Start()
-    {
+    {    
         originalPos = transform.position;
         Move(new Vector2(force, 0));
     }
@@ -31,7 +38,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Mathf.Abs(transform.position.x - originalPos.x) >= 20)
+        if (Mathf.Abs(transform.position.x - originalPos.x) >= range)
         {
             Destroy(gameObject);
         }

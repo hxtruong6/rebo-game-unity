@@ -81,10 +81,8 @@ public class Hero : MonoBehaviour
 
         if (ShootKey())
         {
-            Debug.Log("key shoot");
             if (weaponBar.GetWeapon().CanShoot())
             {
-                Debug.Log("can shoot");
                 Shoot();                
             }     
         }
@@ -141,8 +139,7 @@ public class Hero : MonoBehaviour
         weaponBar.GetWeapon().PrepareToShoot();
         // Set animation
         SetShoot_Animation(true);
-        
-
+ 
         StartCoroutine(ShootNow());
     }
 
@@ -177,27 +174,27 @@ public class Hero : MonoBehaviour
 
     private bool MoveLeftKey()
     {
-        return Input.GetKey(KeyCode.LeftArrow);
+        return Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A);
     }
 
     private bool MoveRightKey()
     {
-        return Input.GetKey(KeyCode.RightArrow);
+        return Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D);
     }
 
     private bool JumpKey()
     {
-        return Input.GetKeyDown(KeyCode.UpArrow);
+        return Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKey(KeyCode.W);
     }
 
     private bool ShootKey()
     {
-        return Input.GetKey(KeyCode.H) || Input.GetKey(KeyCode.Space);
+        return Input.GetKey(KeyCode.KeypadEnter) || Input.GetKey(KeyCode.Space);
     }
 
     private bool ChangeWeaponKey()
     {
-        return Input.GetKeyDown(KeyCode.N);
+        return Input.GetKeyDown(KeyCode.C);
     }
 
     private void ChangeSuit()
