@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class MachineGun : Weapon
 {
-    public MachineGun() : base(5, 30f, 15f, WeaponType.MACHINEGUN)
+    private void Awake()
     {
+        fireRate = 0.3f;
+        damage = 30;
+        bulletForce = 15;
+        bulletRange = 8;
+        type = WeaponType.MACHINEGUN;
     }
-
-    void Start()
-    {
-        
-    }
-
-    
 }
