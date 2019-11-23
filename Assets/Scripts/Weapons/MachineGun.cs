@@ -10,6 +10,6 @@ public class MachineGun : Weapon
         damage = 30;
         bulletForce = 15;
         bulletRange = 8;
-        type = WeaponType.MACHINEGUN;
+        type = WeaponType.Machinegun;
     }
 }

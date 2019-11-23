@@ -14,7 +14,7 @@ public class WeaponBar : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        ChangeToWeapon(WeaponType.MACHINEGUN);
+        ChangeToWeapon(WeaponType.Machinegun);
     }
 
     // Update is called once per frame
