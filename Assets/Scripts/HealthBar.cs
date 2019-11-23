@@ -35,6 +35,7 @@ public class HealthBar : MonoBehaviour
 
             if (characterDies)
             {
+                
                 StartCoroutine(KillCharacter());
             }
         }

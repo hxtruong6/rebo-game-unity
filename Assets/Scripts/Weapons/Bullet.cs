@@ -50,7 +50,7 @@ public class Bullet : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Enemy":
-                //collision.gameObject.GetComponent<EnemyController>().BeingAttacked(this.damage);
+                collision.gameObject.GetComponent<EnemyController>().BeingAttacked(this.damage);
                 break;
             
         }

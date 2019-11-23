@@ -2,7 +2,6 @@
 
 enum ENEMY_STATE
 {
-    FALL,
     IDLE,
     MOVING,
     ATTACK,
@@ -45,8 +44,8 @@ public class EnemyController : MonoBehaviour
     Transform player;
     public float ThresholdAttack = 0.5f;
     HealthBar healthBar;
-    private SoundManager _soundManager;
     private AudioSource _audioSource;
+    private SoundManager _soundManager;
 
     // Start is called before the first frame update
     void Start()
@@ -59,14 +58,13 @@ public class EnemyController : MonoBehaviour
         isGrounded = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         healthBar = GetComponentInChildren<HealthBar>();
-        _soundManager = GetComponent<SoundManager>();
         _audioSource = GetComponent<AudioSource>();
+        _soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(healthBar.IsAlive());
         if (!healthBar.IsAlive()) return;
         distanceToPlayer = Vector2.Distance(player.position, transform.position);
         switch (EnemyState)
@@ -201,9 +199,13 @@ public class EnemyController : MonoBehaviour
 
     public void BeingAttacked(float damage)
     {
-        GetComponent<SoundManager>().PlayEnemySound(_audioSource,SoundType.BeAttacked, EnemyType);
-
+        _soundManager.PlayEnemySound(_audioSource,SoundType.BeAttacked, EnemyType);
         animator.SetTrigger(AnimationName.IS_ATTACKED);
         GetComponentInChildren<HealthBar>().BeAttacked(damage);
+    }
+
+    public void DieBehavior()
+    {
+        _soundManager.PlayEnemySound(_audioSource, SoundType.Die, EnemyType);
     }
 }
