@@ -43,7 +43,7 @@ public class EnemyController : MonoBehaviour
     float distanceToPlayer = float.MaxValue;
     Transform player;
     public float ThresholdAttack = 0.5f;
-    HealthBar healthBar;
+    HealthManager healthBar;
     private AudioSource _audioSource;
     private SoundManager _soundManager;
 
@@ -57,7 +57,7 @@ public class EnemyController : MonoBehaviour
         EnemyState = ENEMY_STATE.IDLE;
         isGrounded = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        healthBar = GetComponentInChildren<HealthBar>();
+        healthBar = GetComponentInChildren<HealthManager>();
         _audioSource = GetComponent<AudioSource>();
         _soundManager = FindObjectOfType<SoundManager>();
     }
@@ -65,7 +65,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!healthBar.IsAlive()) return;
+        //if (!healthBar.IsAlive()) return;
         distanceToPlayer = Vector2.Distance(player.position, transform.position);
         switch (EnemyState)
         {
@@ -201,7 +201,7 @@ public class EnemyController : MonoBehaviour
     {
         _soundManager.PlayEnemySound(_audioSource,SoundType.BeAttacked, EnemyType);
         animator.SetTrigger(AnimationName.IS_ATTACKED);
-        GetComponentInChildren<HealthBar>().BeAttacked(damage);
+        GetComponentInChildren<HealthManager>().BeAttacked(damage);
     }
 
     public void DieBehavior()
