@@ -21,27 +21,6 @@ public class Enemy : ReboObject
 
     protected EnemyAutoControl autoControl;
 
-    void Start()
-    {
-        runSpeed = 5f;
-        jumpSpeed = 250f;
-        attackSpeed = 150f;
-
-        timeCountToAttack = 0;
-        attackRate = 1.8f;
-
-        damage = new Damage(50, 100);
-        level = new Level();
-        vision = new Vision(transform, 3f, 2f, leftRangeMove, rightRangeMove);
-
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        characterSprite = GetComponent<SpriteRenderer>();
-
-        originalPos = transform.position;
-
-        autoControl = new EnemyAutoControl(this, player, 6, 3);
-        
-    }
 
     private void Update()
     {
@@ -87,6 +66,12 @@ public class Enemy : ReboObject
         MoveToLef(vision.ShouldGoLeftToAttack(player.position, true));
     }
 
+    public virtual IEnumerator DestroyEnemy(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+
+        Destroy(gameObject);
+    }
     //-----------------------------------------------
     public override void Idel()
     {
@@ -113,11 +98,6 @@ public class Enemy : ReboObject
         GetComponent<Rigidbody2D>().AddForce(force);
     }
 
-    protected override void WillTakeDamage(float damage)
-    {
-        
-    }
-
     protected override void TakingDamage(float damage)
     {
         health.TakeDamage(damage);
@@ -125,7 +105,10 @@ public class Enemy : ReboObject
 
     protected override void DidTakedDamage(float damage)
     {
-
+        if (!isAlive())
+        {
+            Die();
+        }
     }
 
     public override bool CanAttack()
@@ -165,6 +148,16 @@ public class Enemy : ReboObject
         return health.IsAlive();
     }
 
+    protected override void WillBeDied()
+    {
+        SetDie_Animation();
+        Destroy(health.gameObject);
+    }
+
+    protected override void DidDied()
+    {
+        StartCoroutine(DestroyEnemy(1));
+    }
     //--------------------------------------------
     // Helper Method
     private void SetRun_Animation(bool value)
@@ -172,26 +165,15 @@ public class Enemy : ReboObject
         GetComponent<Animator>().SetBool(AnimationConstants.ENEMY_MOVING, value);
     }
 
-    private void SetFall_Animation()
+    private void SetDie_Animation()
     {
-        GetComponent<Animator>().SetTrigger(AnimationConstants.ENEMY_FALLING);
-        SetJump_Animation(false);
-        SetRun_Animation(false);
+        GetComponent<Animator>().SetTrigger(AnimationConstants.ENEMY_DYING);
     }
 
-    private bool IsRunning()
-    {
-        return GetComponent<Animator>().GetBool(AnimationConstants.ENEMY_MOVING);
-    }
 
     private void SetAttack_Animation()
     {
         GetComponent<Animator>().SetTrigger(AnimationConstants.ENEMY_ATTACKING);
-    }
-
-    private void SetJump_Animation(bool value)
-    {
-        GetComponent<Animator>().SetBool(AnimationConstants.ENEMY_JUMPING, value);
-    }    
+    } 
 
 }

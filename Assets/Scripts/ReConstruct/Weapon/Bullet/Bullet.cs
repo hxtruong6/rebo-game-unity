@@ -70,4 +70,9 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
+    protected virtual float GetCurrentDamage()
+    {
+        return damage * (1 - Mathf.Abs(transform.position.x - originalPos.x) / range);
+    }
+
 }

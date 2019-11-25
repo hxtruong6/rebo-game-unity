@@ -9,7 +9,7 @@ public class ReboObject : ReboRootObject
 
     public Damage damage;
     public Vision vision;
-    public SpriteRenderer characterSprite;
+    protected SpriteRenderer characterSprite;
 
     protected virtual void WillTakeDamage(float damage)
     {
@@ -135,7 +135,7 @@ public class ReboObject : ReboRootObject
 
     }
 
-    protected virtual void DiDDied()
+    protected virtual void DidDied()
     {
 
     }
@@ -144,7 +144,7 @@ public class ReboObject : ReboRootObject
     {
         WillBeDied();
         Dying();
-        DiDDied();
+        DidDied();
     }
 
     public virtual void Idel()
