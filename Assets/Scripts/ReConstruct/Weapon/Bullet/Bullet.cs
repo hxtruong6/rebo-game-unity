@@ -50,9 +50,11 @@ public class Bullet : ReboRootObject
         switch (collision.gameObject.tag)
         {
             case "Enemy":
-                if (collision.gameObject != null)
+                if (collision != null && collision.gameObject != null && collision.gameObject.GetComponent<Enemy>().isAlive())
                 {
-                    collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+                    collision.gameObject.GetComponent<Enemy>().TakeDamage(GetCurrentDamage());
+
+                    Destroy(gameObject);
                 }
                 
                 break;
@@ -69,7 +71,7 @@ public class Bullet : ReboRootObject
 
     protected virtual void DidOnTriggerEnter()
     {
-        Destroy(gameObject);
+        
     }
 
     protected virtual float GetCurrentDamage()

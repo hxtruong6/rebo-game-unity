@@ -28,6 +28,8 @@ public class ReboObject : ReboRootObject
 
     public void TakeDamage(float damage)
     {
+        if (!isAlive())
+            return;
         WillTakeDamage(damage);
         TakingDamage(damage);
         DidTakedDamage(damage);
@@ -76,7 +78,7 @@ public class ReboObject : ReboRootObject
 
     public virtual void Move(Vector2 force)
     {
-
+            
     }
 
     public virtual void MoveTo(Vector2 newPos)

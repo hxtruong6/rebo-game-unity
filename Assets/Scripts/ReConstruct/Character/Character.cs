@@ -102,7 +102,7 @@ public class Character : ReboObject
 
     protected override void WillTakeDamage(float damage)
     {
-        SetFall_Animation();
+        SetTakeDamage_Animation();
     }
 
     protected override void TakingDamage(float damage)
@@ -184,18 +184,14 @@ public class Character : ReboObject
         GetComponent<Animator>().SetBool(AnimationConstants.CHARACTER_MOVING, value);
     }
 
-    private void SetFall_Animation()
+    private void SetTakeDamage_Animation()
     {
-        GetComponent<Animator>().SetTrigger(AnimationConstants.CHARACTER_FALLING);
-        SetJump_Animation(false);
-        SetRun_Animation(false);
+        GetComponent<Animator>().SetTrigger(AnimationConstants.CHARACTER_TAKING_DAMAGE);  
     }
 
     private void SetDie_Animation()
     {
-        GetComponent<Animator>().SetTrigger(AnimationConstants.CHARACTER_FALLING);
-        SetJump_Animation(false);
-        SetRun_Animation(false);
+        GetComponent<Animator>().SetTrigger(AnimationConstants.CHARACTER_TAKING_DAMAGE);
     }
 
     private bool IsRunning()

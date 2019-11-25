@@ -14,8 +14,7 @@ public class AnimationConstants
 
     public static string CHARACTER_MOVING = "isRunning";
     public static string CHARACTER_JUMPING = "isJumping";
-    public static string CHARACTER_FALLING = "isFalling";
-    public static string CHARACTER_ATTACKING = "isShooting";
-    public static string CHARACTER_TAKING_DAMAMGE = "";
+    public static string CHARACTER_TAKING_DAMAGE = "isTakingDamage";
+    public static string CHARACTER_ATTACKING = "isAttacking";
 
 }
