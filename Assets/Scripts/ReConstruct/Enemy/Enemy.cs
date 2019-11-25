@@ -59,7 +59,6 @@ public class Enemy : ReboObject
         }
     }
 
-
     public virtual void Chase()
     {
         SetRun_Animation(true);

@@ -13,6 +13,7 @@ public class MeleeSolider : Enemy
         timeCountToAttack = 0;
         attackRate = 1.8f;
 
+        health.currentHealth = health.maxHealth = 200;
         damage = new Damage(50, 100);
         level = new Level();
         vision = new Vision(transform, 3f, 2f, leftRangeMove, rightRangeMove);

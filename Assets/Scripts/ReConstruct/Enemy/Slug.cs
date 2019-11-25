@@ -13,6 +13,7 @@ public class Slug : Enemy
         timeCountToAttack = 0;
         attackRate = 2f;
 
+        health.currentHealth = health.maxHealth = 500;
         damage = new Damage(100, 200);
         level = new Level();
         vision = new Vision(transform, 3.5f, 2.5f, leftRangeMove, rightRangeMove);
