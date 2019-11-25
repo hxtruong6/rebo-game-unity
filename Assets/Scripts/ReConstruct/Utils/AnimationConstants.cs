@@ -8,7 +8,7 @@ public class AnimationConstants
     public static string ENEMY_DYING = "isDying";
     public static string ENEMY_FALLING = "isFalling";
     public static string ENEMY_ATTACKING = "isAttacking";
-    public static string ENEMY_TAKING_DAMAGE = "isTakingDamae";
+    public static string ENEMY_TAKING_DAMAGE = "isTakingDamage";
     public static string ENEMY_JUMPING = "";
     
 

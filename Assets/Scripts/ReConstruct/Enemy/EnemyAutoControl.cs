@@ -45,7 +45,7 @@ public class EnemyAutoControl : Object
 
     public virtual void Execute()
     {
-        if (enemy.vision.SpottedOut(playerTransform.position))
+        if (enemy.vision.SpottedOut(playerTransform.position) && !enemy.vision.OutOfRange())
         {
             if (enemy.CanAttack())
             {

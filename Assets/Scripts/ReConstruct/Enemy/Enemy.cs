@@ -99,6 +99,7 @@ public class Enemy : ReboObject
 
     protected override void TakingDamage(float damage)
     {
+        SetTakeDamage_Animation();
         health.TakeDamage(damage);
     }
 
@@ -112,8 +113,7 @@ public class Enemy : ReboObject
 
     public override bool CanAttack()
     {
-        return (timeCountToAttack >= attackRate) &&
-             (vision.CanAttack(player.position));
+        return (timeCountToAttack >= attackRate);
     }
 
     protected override void WillAttack()
@@ -155,7 +155,7 @@ public class Enemy : ReboObject
 
     protected override void DidDied()
     {
-        StartCoroutine(DestroyEnemy(1));
+        StartCoroutine(DestroyEnemy(1.5f));
     }
     //--------------------------------------------
     // Helper Method
@@ -173,6 +173,11 @@ public class Enemy : ReboObject
     private void SetAttack_Animation()
     {
         GetComponent<Animator>().SetTrigger(AnimationConstants.ENEMY_ATTACKING);
-    } 
+    }
+
+    private void SetTakeDamage_Animation()
+    {
+        GetComponent<Animator>().SetTrigger(AnimationConstants.ENEMY_TAKING_DAMAGE);
+    }
 
 }

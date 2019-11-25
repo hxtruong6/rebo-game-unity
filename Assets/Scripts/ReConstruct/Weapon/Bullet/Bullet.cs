@@ -45,7 +45,7 @@ public class Bullet : MonoBehaviour
    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-         WillOnCollision();
+        WillOnTriggerEnter();
 
         switch (collision.gameObject.tag)
         {
@@ -57,15 +57,15 @@ public class Bullet : MonoBehaviour
 
         }
 
-        DidOnCollision();
+        DidOnTriggerEnter();
     }
 
-    protected virtual void WillOnCollision()
+    protected virtual void WillOnTriggerEnter()
     {
 
     }
 
-    protected virtual void DidOnCollision()
+    protected virtual void DidOnTriggerEnter()
     {
         Destroy(gameObject);
     }
