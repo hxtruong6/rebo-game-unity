@@ -70,7 +70,7 @@ public class Weapon : MonoBehaviour
             bulletPos += distanceBetweenBulletVsHero;
         }
 
-        bulletClone.SetAtributes(bulletPos, character.GetCurrentDamage(), force, bulletRange);
+        bulletClone.SetAtributes(bulletPos, character.GetAttackDamage(), force, bulletRange);
 
         bulletClone.GetComponent<SpriteRenderer>().flipX = character.LookToTheLeft();
 

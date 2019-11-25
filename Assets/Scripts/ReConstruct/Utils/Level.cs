@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Level : Object
 {
-   
-    public int maxLevel = 6;
+
+    public int maxLevel;
     public int currentLevel;
 
-    public Level(int maxLevel)
+    public Level(int maxLevel = 6)
     {
         this.maxLevel = maxLevel;
+        currentLevel = 0;
     }
 
     private void LevelChanged()
@@ -44,7 +45,7 @@ public class Level : Object
         return currentLevel;
     }
 
-    public float GetDamage()
+    public float GetAdditionDamage()
     {
         return currentLevel * 10;
     }

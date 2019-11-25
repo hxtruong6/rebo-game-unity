@@ -10,20 +10,15 @@ public class Character : ReboObject
     public LevelBar level;
     public HealthBar health;
     public WeaponManager weaponManager;
-
-    private SpriteRenderer characterSprite;
-
     
-
     void Start()
     {
-
-        speed = 7f;
+        runSpeed = 7f;
         jumpSpeed = 200f;
         jumpCount = 0;
-        maxJumpCount = 2;
+        maxJumpCount = 2;        
 
-        damage = new BaseDamage(50);
+        damage = new Damage(0, 50);
 
         characterSprite = GetComponent<SpriteRenderer>();
 
@@ -40,7 +35,7 @@ public class Character : ReboObject
     {
         if (MoveLeftKey() || MoveRightKey())
         {
-            MoveToLeft(MoveLeftKey(), new Vector2(speed, 0));
+            MoveToLeft(MoveLeftKey(), runSpeed);
         }
         else
         {
@@ -80,7 +75,7 @@ public class Character : ReboObject
 
     //---------------------------------------------------------------------
 
-    public override void MoveToLeft(bool left, Vector2 force)
+    public override void MoveToLeft(bool left, float force)
     {
         SetRun_Animation(true);
         base.MoveToLeft(left, force);
@@ -112,7 +107,6 @@ public class Character : ReboObject
 
     protected override void TakingDamage(float damage)
     {
-
         health.TakeDamage(damage);
     }
 
@@ -121,7 +115,7 @@ public class Character : ReboObject
 
     }
 
-    protected override bool CanAttack()
+    public override bool CanAttack()
     {
         return weaponManager.CanFire();
     }
@@ -142,9 +136,14 @@ public class Character : ReboObject
     }
 
 
-    public override float GetCurrentDamage()
+    public override float GetAttackDamage()
     {
-        return damage.GetCurrentDamage() + level.GetDamage();
+        return damage.GetAttackDamage() + level.GetAdditionDamage();
+    }
+
+    public override float GetComboDamage()
+    {
+        return GetAttackDamage() + damage.GetBaseDamage();
     }
 
     protected override void LookToTheLeft(bool toLeft)

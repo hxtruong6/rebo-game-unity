@@ -19,7 +19,7 @@ public class HealthBar : MonoBehaviour
 
         SetSize(1.0f);
 
-        health = new Health(1000, 1000);
+        health = new Health(1000);
     }
 
     private void Update()

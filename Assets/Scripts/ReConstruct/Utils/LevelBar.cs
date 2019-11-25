@@ -60,7 +60,7 @@ public class LevelBar : MonoBehaviour
         return currentLevel;
     }
 
-    public float GetDamage()
+    public float GetAdditionDamage()
     {
         return currentLevel * 10;
     }

@@ -7,10 +7,10 @@ public class Health : Object
     public float maxHealth;
     public float currentHealth;
 
-    public Health(float maxHealth, float currentHealth)
+    public Health(float maxHealth = 1000)
     {
         this.maxHealth = maxHealth;
-        this.currentHealth = currentHealth;
+        this.currentHealth = maxHealth;
     }
 
     private void ChangeHealth()

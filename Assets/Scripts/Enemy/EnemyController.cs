@@ -56,6 +56,7 @@ public class EnemyController : MonoBehaviour
         timeCount = 0;
         EnemyState = ENEMY_STATE.IDLE;
         isGrounded = false;
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
         healthBar = GetComponentInChildren<HealthManager>();
         _audioSource = GetComponent<AudioSource>();

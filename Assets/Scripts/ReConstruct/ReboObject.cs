@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReboObject : MonoBehaviour
+public class ReboObject : ReboRootObject
 {
-    public float speed;
+    public float runSpeed;
     public float jumpSpeed;
 
-    protected BaseDamage damage;
+    public Damage damage;
+    public Vision vision;
+    public SpriteRenderer characterSprite;
 
     protected virtual void WillTakeDamage(float damage)
     {
@@ -27,19 +29,26 @@ public class ReboObject : MonoBehaviour
     public void TakeDamage(float damage)
     {
         WillTakeDamage(damage);
-        TakeDamage(damage);
+        TakingDamage(damage);
         DidTakedDamage(damage);
     }
 
-    protected virtual bool CanAttack()
-    {
-        return true;
-    }
-
+    
     protected virtual void Jump(Vector2 force)
     {
 
     }
+
+    protected virtual void Jump(float force)
+    {
+
+    }
+
+    public virtual bool CanAttack()
+    {
+        return true;
+    }
+
 
     protected virtual void WillAttack()
     {
@@ -73,12 +82,12 @@ public class ReboObject : MonoBehaviour
 
     }
 
-    public virtual void MoveToLeft(bool left, Vector2 force)
+    public virtual void MoveToLeft(bool left, float force)
     {
         LookToTheLeft(left);
         if (left)
             force = -force;
-        Move(force);
+        Move(new Vector2(force, 0));
     }
 
     public virtual bool isAlive()
@@ -86,9 +95,19 @@ public class ReboObject : MonoBehaviour
         return true;
     }
 
-    public virtual float GetCurrentDamage()
+    public virtual float GetAttackDamage()
     {
         return 0;
+    }
+
+    public virtual float GetBaseDamage()
+    {
+        return 0;
+    }
+
+    public virtual float GetComboDamage()
+    {
+        return GetAttackDamage() + GetBaseDamage();
     }
 
     public virtual bool LookToTheLeft()
@@ -126,5 +145,10 @@ public class ReboObject : MonoBehaviour
         WillBeDied();
         Dying();
         DiDDied();
+    }
+
+    public virtual void Idel()
+    {
+
     }
 }

@@ -42,15 +42,17 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+   
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        WillOnCollision();
+         WillOnCollision();
 
         switch (collision.gameObject.tag)
         {
             case "Enemy":
-                //collision.gameObject.GetComponent<EnemyController>().BeingAttacked(this.damage);
+
+                collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+
                 break;
 
         }
