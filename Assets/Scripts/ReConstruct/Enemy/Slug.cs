@@ -23,7 +23,7 @@ public class Slug : Enemy
         originalPos = transform.position;
 
         autoControl = new EnemyAutoControl(this, player, 6, 2);
-        health.TakeDamage(990);
+        
     }
 
     protected override void LookToTheLeft(bool toLeft)
