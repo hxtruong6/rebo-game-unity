@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : ReboRootObject
 {
     public float damage;
     public float force;
@@ -50,9 +50,11 @@ public class Bullet : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Enemy":
-
-                collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
-
+                if (collision.gameObject != null)
+                {
+                    collision.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+                }
+                
                 break;
 
         }

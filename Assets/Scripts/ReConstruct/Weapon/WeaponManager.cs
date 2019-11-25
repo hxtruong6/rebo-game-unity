@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponManager : MonoBehaviour
+public class WeaponManager : ReboRootObject
 {
     public Weapon[] weapons;
     private Weapon weapon;

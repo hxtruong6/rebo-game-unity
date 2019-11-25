@@ -112,7 +112,8 @@ public class Character : ReboObject
 
     protected override void DidTakedDamage(float damage)
     {
-
+        if (!isAlive())
+            Die();
     }
 
     public override bool CanAttack()
@@ -135,6 +136,10 @@ public class Character : ReboObject
         // TODO DidAttacked
     }
 
+    protected override void WillBeDied()
+    {
+        SetDie_Animation();
+    }
 
     public override float GetAttackDamage()
     {
@@ -180,6 +185,13 @@ public class Character : ReboObject
     }
 
     private void SetFall_Animation()
+    {
+        GetComponent<Animator>().SetTrigger(AnimationConstants.CHARACTER_FALLING);
+        SetJump_Animation(false);
+        SetRun_Animation(false);
+    }
+
+    private void SetDie_Animation()
     {
         GetComponent<Animator>().SetTrigger(AnimationConstants.CHARACTER_FALLING);
         SetJump_Animation(false);

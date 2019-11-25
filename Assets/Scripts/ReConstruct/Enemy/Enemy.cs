@@ -150,7 +150,8 @@ public class Enemy : ReboObject
     protected override void WillBeDied()
     {
         SetDie_Animation();
-        Destroy(health.gameObject);
+        health.gameObject.SetActive(false);
+        //Destroy(health.gameObject);
     }
 
     protected override void DidDied()

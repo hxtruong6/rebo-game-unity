@@ -69,7 +69,8 @@ public class HealthBar : MonoBehaviour
 
     private void SetSize(float size)
     {
-        bar.localScale = new Vector3(size, 1f);
+        if (bar != null)
+            bar.localScale = new Vector3(size, 1f);
     }
 
 
