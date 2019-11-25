@@ -66,10 +66,6 @@ public class Character : ReboObject
                 jumpCount = 0;
                 SetJump_Animation(false);
                 break;
-
-            case "Enemy":
-                TakeDamage(100);
-                break;
         }
     }
 
