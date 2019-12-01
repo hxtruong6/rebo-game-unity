@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MissionEnd : MonoBehaviour
+public class MissionEnd : ReboRootObject
 {
     public string MissionSceneName = "Missions";
     public string CurrentSceneName = "Mission01";

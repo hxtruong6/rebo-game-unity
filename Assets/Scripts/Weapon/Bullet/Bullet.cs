@@ -9,10 +9,12 @@ public class Bullet : ReboRootObject
     public float range;
     public Vector2 originalPos;
 
-    private void Awake()
+
+    public override void SetupInAwake()
     {
+        base.SetupInAwake();
         range = 1;
-    }
+    }    
 
     public virtual void SetAtributes(Vector2 pos, float damage, float force, float range)
     {

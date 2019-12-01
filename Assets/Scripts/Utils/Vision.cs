@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vision : ReboRootObject
+public class Vision : Object
 {
     private float spottOutRange;
     private float attackRange;
@@ -25,9 +25,14 @@ public class Vision : ReboRootObject
         return Vector2.Distance(owner.position, pos) <= spottOutRange;
     }
 
-    public bool ShouldGoLeftToAttack(Vector2 pos, bool toLeft)
+    public bool ShouldGoLeftToAttack(Vector2 pos)
     {
-        return toLeft ? pos.x < owner.position.x : pos.x >= owner.position.x;
+        return pos.x < owner.position.x;
+    }
+
+    public bool TargetIsInRange(Vector2 pos)
+    {
+        return  leftRange.x <= pos.x &&  pos.x <= rightRange.x;
     }
 
     public bool CanAttack(Vector2 pos)

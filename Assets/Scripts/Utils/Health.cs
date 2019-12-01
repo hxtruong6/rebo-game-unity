@@ -41,6 +41,8 @@ public class Health : Object
         return currentHealth;
     }
 
+    
+
     public bool IsAlive()
     {
         return currentHealth > 0;

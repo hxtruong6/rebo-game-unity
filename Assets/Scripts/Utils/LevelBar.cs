@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelBar : MonoBehaviour
+public class LevelBar : ReboRootObject
 {
    
     public Sprite[] levelSprites;

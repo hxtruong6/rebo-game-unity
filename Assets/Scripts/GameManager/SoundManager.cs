@@ -11,7 +11,7 @@ public enum SoundType
     Die
 }
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : ReboRootObject
 {
     public AudioClip EnemyBeAttackedSound;
     public AudioClip PlayerBeAttackedSound;

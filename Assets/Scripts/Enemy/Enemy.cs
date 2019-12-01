@@ -10,7 +10,7 @@ public enum EnemyType
 
 public class Enemy : ReboObject
 {
-    public float attackMoveSpeed = 150;    
+    public float attackMoveSpeed = 150;
     public float attackRate = 2;
     public float attackRange = 2;
     public float spottOutRange = 3;
@@ -24,7 +24,7 @@ public class Enemy : ReboObject
     // Range move
     public Vector2 leftRangeMove;
     public Vector2 rightRangeMove;
-    
+
     protected Transform player;
     protected Vector2 originalPos;
     protected EnemyType type = EnemyType.Slug;
@@ -34,7 +34,7 @@ public class Enemy : ReboObject
     protected EnemyAutoControl autoControl;
 
     private AudioSource audioSource;
-    
+
 
     protected override void Setup()
     {
@@ -56,7 +56,7 @@ public class Enemy : ReboObject
     }
 
     private void Update()
-    {
+    {   
         autoControl.Execute();
 
         if (timeCountToRecuperate > maxTimeBetween2TakeDamage)
@@ -70,9 +70,8 @@ public class Enemy : ReboObject
         timeCountToRecuperate += Time.deltaTime;
     }
 
-
     public virtual void MoveToLef(bool left)
-    {
+    { 
         SetRun_Animation(true);
         MoveToLeft(left, runSpeed);
     }
@@ -80,7 +79,7 @@ public class Enemy : ReboObject
     public virtual void ChaseToLef(bool left)
     {
         SetRun_Animation(true);
-        MoveToLeft(left, 2f * runSpeed);
+        MoveToLeft(left, 1.2f * runSpeed);
     }
 
     protected virtual Vector2 GetPushForceWhenAttacking()
@@ -102,7 +101,7 @@ public class Enemy : ReboObject
 
                     collision.gameObject.GetComponent<Character>().Move(GetPushForceWhenAttacking());
                 }
-                                
+
                 break;
         }
     }
@@ -110,7 +109,7 @@ public class Enemy : ReboObject
     public virtual void Chase()
     {
         SetRun_Animation(true);
-        ChaseToLef(vision.ShouldGoLeftToAttack(player.position, true));   
+        ChaseToLef(vision.ShouldGoLeftToAttack(player.position));
     }
 
     public virtual IEnumerator DestroyEnemy(float waitTime)
@@ -119,18 +118,13 @@ public class Enemy : ReboObject
 
         GameObject.FindGameObjectWithTag("Player").GetComponent<Character>().updateNumberOfEnemiesAnnihilated(type);
 
-        Destroy(gameObject);                    
+        Destroy(gameObject);
     }
     //-----------------------------------------------
-    public override void Idel()
+    public override void Idle()
     {
         SetRun_Animation(false);
-    }
-
-    public override void MoveToLeft(bool left, float force)
-    {
-        base.MoveToLeft(left, force);
-    }
+    }    
 
     protected override bool CanJump()
     {
@@ -142,10 +136,10 @@ public class Enemy : ReboObject
         Move(force);
     }
 
-    public override void Move(Vector2 force)
+    public override void MoveToLeft(bool left, float force)
     {
-        GetComponent<Rigidbody2D>().AddForce(force);
-    }
+        base.MoveToLeft(left, force);
+    } 
 
     protected override void WillTakeDamage(float damage)
     {
@@ -173,7 +167,7 @@ public class Enemy : ReboObject
 
     public override bool CanAttack()
     {
-        return (timeCountToAttack >= attackRate);
+        return (timeCountToAttack >= attackRate && vision.CanAttack(player.position));
     }
 
     protected override void WillAttack()
@@ -211,7 +205,7 @@ public class Enemy : ReboObject
     {
         FindObjectOfType<SoundManager>().PlayEnemySound(audioSource, SoundType.Die, type);
         SetDie_Animation();
-        health.gameObject.SetActive(false);  
+        health.gameObject.SetActive(false);
     }
 
     protected override void DidDied()

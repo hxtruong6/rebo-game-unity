@@ -8,7 +8,7 @@ public enum WeaponType
     Bow
 }
 
-public class Weapon : MonoBehaviour
+public class Weapon : ReboRootObject
 {
     public float fireRate = 0.6f;
     public float damage = 0;

@@ -9,8 +9,9 @@ public class WeaponManager : ReboRootObject
     private Weapon weapon;
     private SpriteRenderer spriteRenderer;
 
-    void Awake()
+    public override void SetupInAwake()
     {
+        base.SetupInAwake();
         spriteRenderer = GetComponent<SpriteRenderer>();
         ChangeToWeapon(weapons[0].type, null);
     }

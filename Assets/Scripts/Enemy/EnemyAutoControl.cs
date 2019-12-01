@@ -25,7 +25,7 @@ public class EnemyAutoControl : Object
 {
     protected Enemy enemy;
     protected float timeCount;
- 
+
     protected EnemyState state;
     protected Transform playerTransform;
     protected ActionTime[] stateTimes;
@@ -35,8 +35,8 @@ public class EnemyAutoControl : Object
         this.enemy = enemy;
         this.playerTransform = playerTransform;
 
-        this.state = EnemyState.MovingToLeft;
-        this.timeCount = 0;
+        this.state = Random.Range(1, 10) % 2 == 0 ? EnemyState.MovingToLeft : EnemyState.MovingToRight;
+        this.timeCount = Random.Range(0, maxTimeMoving);
 
         stateTimes = new ActionTime[3] { new ActionTime(EnemyState.MovingToLeft, maxTimeMoving),
             new ActionTime(EnemyState.MovingToRight, maxTimeMoving),
@@ -45,7 +45,8 @@ public class EnemyAutoControl : Object
 
     public virtual void Execute()
     {
-        if (enemy.vision.SpottedOut(playerTransform.position) && !enemy.vision.OutOfRange())
+        if (enemy.vision.TargetIsInRange(playerTransform.position) &&
+            enemy.vision.SpottedOut(playerTransform.position) && !enemy.vision.OutOfRange())
         {
             if (enemy.CanAttack())
             {
@@ -54,17 +55,29 @@ public class EnemyAutoControl : Object
             else
             {
                 enemy.Chase();
-            }           
+            }
         }
         else
         {
-            AutoMove();            
+            AutoMove();
         }
-        timeCount += Time.deltaTime;      
+        timeCount += Time.deltaTime;
     }
 
     protected virtual void AutoMove()
     {
+        if (enemy.health.PercentageOfHealth() < 0.5)
+        {
+            ResetTimeCount();
+            if (enemy.vision.ShouldGoLeftToAttack(playerTransform.position))
+            {
+                state = EnemyState.MovingToRight;
+            }
+            else
+            {
+                state = EnemyState.MovingToLeft;
+            }
+        }
         if (CanAction())
             KeepAction();
         else
@@ -80,7 +93,6 @@ public class EnemyAutoControl : Object
     {
         if (state != EnemyState.Idle)
         {
-            //Debug.Log("Keep Action Move " + state);
             if (state == EnemyState.MovingToLeft)
                 enemy.MoveToLef(true);
             else
@@ -88,7 +100,7 @@ public class EnemyAutoControl : Object
         }
         else
         {
-            enemy.Idel();
+            enemy.Idle();
             //Debug.Log("Keep Idel");
         }
     }

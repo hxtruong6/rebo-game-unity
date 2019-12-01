@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ReboObject : ReboRootObject
 {
+    protected float FPS = 50;
+
     public float runSpeed = 10;
     public float jumpSpeed = 250;
 
@@ -98,8 +100,8 @@ public class ReboObject : ReboRootObject
     }
 
     public virtual void Move(Vector2 force)
-    {
-            
+    {       
+        GetComponent<Rigidbody2D>().AddForce(force * FPS * Time.deltaTime);
     }
 
     public virtual void MoveTo(Vector2 newPos)
@@ -172,7 +174,7 @@ public class ReboObject : ReboRootObject
         DidDied();
     }
 
-    public virtual void Idel()
+    public virtual void Idle()
     {
 
     }

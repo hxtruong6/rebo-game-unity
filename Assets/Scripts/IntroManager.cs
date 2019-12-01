@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IntroManager : MonoBehaviour
+public class IntroManager : ReboRootObject
 {
     public GameObject Menu;
     public GameObject Intro;

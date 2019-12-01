@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Character : ReboObject
 {
-    protected int jumpCount = 0;
+    public int jumpCount = 0;
     public int maxJumpCount = 2;
     public int numberOfCoins = 0;
 
@@ -101,11 +101,6 @@ public class Character : ReboObject
         {
             health.Recuperate(blood);
         }
-    }
-
-    public override void Move(Vector2 force)
-    {
-        GetComponent<Rigidbody2D>().AddForce(force);
     }
 
     protected override void WillTakeDamage(float damage)

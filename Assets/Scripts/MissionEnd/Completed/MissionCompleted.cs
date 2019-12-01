@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MissionCompleted : MonoBehaviour
+public class MissionCompleted : ReboRootObject
 { 
     public void UpdateNumberOfEnemiesAnnihilated(Dictionary<EnemyType, int> numberOfEnemiesAnnihilated)
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera_Follow : MonoBehaviour
+public class Camera_Follow : ReboRootObject
 {
     public Transform target;
 
@@ -11,12 +11,26 @@ public class Camera_Follow : MonoBehaviour
     public Vector2 leftRange;
     public Vector2 rightRange;
 
-    private void Awake()
+    public override void SetupInAwake()
     {
-#if UNITY_EDITOR
-        QualitySettings.vSyncCount = 0;  // VSync must be disabled
-        Application.targetFrameRate = 45;
-#endif
+        base.SetupInAwake();
+        QualitySettings.vSyncCount = 0;
+    }
+
+    private void Update()
+    {
+        GameObject[] array = GameObject.FindGameObjectsWithTag("Enemy");
+        for(int i=0; i<array.Length; i++)
+        {
+            if (Vector2.Distance(target.position, array[i].transform.position) >= 30)
+            {
+                array[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                array[i].gameObject.SetActive(true);
+            }
+        }
     }
 
     void LateUpdate()

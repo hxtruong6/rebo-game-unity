@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthBar : MonoBehaviour
+public class HealthBar : ReboRootObject
 {
     public float maxHealth
     {
@@ -44,6 +44,11 @@ public class HealthBar : MonoBehaviour
     private void Update()
     {
         ChangeHealth();
+    }
+
+    public float PercentageOfHealth()
+    {
+        return currentHealth / maxHealth;
     }
 
     public float TakeDamage(float damage)
