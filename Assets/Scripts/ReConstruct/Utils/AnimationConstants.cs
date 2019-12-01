@@ -17,4 +17,5 @@ public class AnimationConstants
     public static string CHARACTER_TAKING_DAMAGE = "isTakingDamage";
     public static string CHARACTER_ATTACKING = "isAttacking";
 
+    public static string ITEAM_GONE = "isGone";
 }

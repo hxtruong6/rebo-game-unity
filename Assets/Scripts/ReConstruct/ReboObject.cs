@@ -27,6 +27,11 @@ public class ReboObject : ReboRootObject
 
     }
 
+    public virtual void Recuperate(float blood)
+    {
+
+    }
+
     protected virtual void WillTakeDamage(float damage)
     {
 
