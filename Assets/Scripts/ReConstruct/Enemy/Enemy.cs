@@ -77,6 +77,12 @@ public class Enemy : ReboObject
         MoveToLeft(left, runSpeed);
     }
 
+    public virtual void ChaseToLef(bool left)
+    {
+        SetRun_Animation(true);
+        MoveToLeft(left, 2f * runSpeed);
+    }
+
     protected virtual Vector2 GetPushForceWhenAttacking()
     {
         float pushForce = 1.5f * attackMoveSpeed;
@@ -90,10 +96,13 @@ public class Enemy : ReboObject
         switch (collision.gameObject.tag)
         {
             case "Player":
-                       
-                collision.gameObject.GetComponent<Character>().TakeDamage(GetAttackDamage());
-               
-                collision.gameObject.GetComponent<Character>().Move(GetPushForceWhenAttacking());                
+                if (health.IsAlive())
+                {
+                    collision.gameObject.GetComponent<Character>().TakeDamage(GetAttackDamage());
+
+                    collision.gameObject.GetComponent<Character>().Move(GetPushForceWhenAttacking());
+                }
+                                
                 break;
         }
     }
@@ -101,7 +110,7 @@ public class Enemy : ReboObject
     public virtual void Chase()
     {
         SetRun_Animation(true);
-        MoveToLef(vision.ShouldGoLeftToAttack(player.position, true));
+        ChaseToLef(vision.ShouldGoLeftToAttack(player.position, true));   
     }
 
     public virtual IEnumerator DestroyEnemy(float waitTime)
@@ -207,6 +216,7 @@ public class Enemy : ReboObject
 
     protected override void DidDied()
     {
+        GetComponent<BoxCollider2D>().isTrigger = true;
         StartCoroutine(DestroyEnemy(1.5f));
     }
     //--------------------------------------------
