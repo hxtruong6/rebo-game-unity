@@ -74,7 +74,7 @@ public class Enemy : ReboObject
 
     protected virtual Vector2 GetPushForceWhenAttacking()
     {
-        float pushForce = 2 * attackMoveSpeed;
+        float pushForce = 1.5f * attackMoveSpeed;
         if (LookToTheLeft())
             pushForce = -pushForce;
         return new Vector2(pushForce, 0);
@@ -87,10 +87,8 @@ public class Enemy : ReboObject
             case "Player":
                        
                 collision.gameObject.GetComponent<Character>().TakeDamage(GetAttackDamage());
-
                
-                collision.gameObject.GetComponent<Character>().Move(GetPushForceWhenAttacking());
-                
+                collision.gameObject.GetComponent<Character>().Move(GetPushForceWhenAttacking());                
                 break;
         }
     }
