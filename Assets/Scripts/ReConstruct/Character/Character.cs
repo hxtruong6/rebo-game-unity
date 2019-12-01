@@ -113,6 +113,9 @@ public class Character : ReboObject
 
     protected override void DidTakedDamage(float damage)
     {
+        SetRun_Animation(false);
+        SetJump_Animation(false);
+
         if (!isAlive())
             Die();
     }
