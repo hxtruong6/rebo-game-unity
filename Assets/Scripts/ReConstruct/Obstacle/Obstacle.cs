@@ -22,6 +22,7 @@ public class Obstacle : ReboRootObject
                 if (collision.gameObject != null)
                 {
                     timeCount = 0;
+                    collision.gameObject.GetComponent<Character>().Move(new Vector2(0, 200));
                     collision.gameObject.GetComponent<Character>().TakeDamage(damage);
                 }
 
@@ -37,6 +38,7 @@ public class Obstacle : ReboRootObject
                 if (timeCount > maxTimeBetween2Attack && collision.gameObject != null)
                 {
                     timeCount = 0;
+                    collision.gameObject.GetComponent<Character>().Move(new Vector2(0, 200));
                     collision.gameObject.GetComponent<Character>().TakeDamage(damage);
                 }
 
