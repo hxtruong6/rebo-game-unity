@@ -118,6 +118,7 @@ public class Enemy : ReboObject
         yield return new WaitForSeconds(waitTime);
 
         GameObject.FindGameObjectWithTag("Player").GetComponent<Character>().updateNumberOfEnemiesAnnihilated(type);
+
         Destroy(gameObject);                    
     }
     //-----------------------------------------------
@@ -210,8 +211,7 @@ public class Enemy : ReboObject
     {
         FindObjectOfType<SoundManager>().PlayEnemySound(audioSource, SoundType.Die, type);
         SetDie_Animation();
-        health.gameObject.SetActive(false);
-        //Destroy(health.gameObject);
+        health.gameObject.SetActive(false);  
     }
 
     protected override void DidDied()

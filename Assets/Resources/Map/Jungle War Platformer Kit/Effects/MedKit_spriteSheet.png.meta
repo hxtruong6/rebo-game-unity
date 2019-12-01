@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 8bb9cf44cbe8e412a852128fc33031ba
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MedKit_spriteSheet_0
+    21300002: MedKit_spriteSheet_1
+    21300004: MedKit_spriteSheet_2
+    21300006: MedKit_spriteSheet_3
+    21300008: MedKit_spriteSheet_4
+    21300010: MedKit_spriteSheet_5
+    21300012: MedKit_spriteSheet_6
+    21300014: MedKit_spriteSheet_7
+    21300016: MedKit_spriteSheet_8
+    21300018: MedKit_spriteSheet_9
+    21300020: MedKit_spriteSheet_10
+    21300022: MedKit_spriteSheet_11
+    21300024: MedKit_spriteSheet_12
+    21300026: MedKit_spriteSheet_13
+    21300028: MedKit_spriteSheet_14
+    21300030: MedKit_spriteSheet_15
+    21300032: MedKit_spriteSheet_16
+    21300034: MedKit_spriteSheet_17
+    21300036: MedKit_spriteSheet_18
+    21300038: MedKit_spriteSheet_19
+    21300040: MedKit_spriteSheet_20
+    21300042: MedKit_spriteSheet_21
+    21300044: MedKit_spriteSheet_22
+    21300046: MedKit_spriteSheet_23
+    21300048: MedKit_spriteSheet_24
+    21300050: MedKit_spriteSheet_25
+    21300052: MedKit_spriteSheet_26
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +67,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +96,560 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 64
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f93d8ca93734c7fbd754f8879ba698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 66
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982257cb359e6448baa42777b7dc0c2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 93
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1f1e83f3b3f449ca7383aed773b3b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 92
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfac40c753ea47cdbfd6feeb771cbbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 64
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2daf9186013bd4b2a855676761dec32e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 64
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799ad61d56e90405889c309832c7b7ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 63
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5538279f2814106a349de727e98925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 63
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc98ba9130674333b64803735ea5b28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 8
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975adcea0a6a24627b04ef3e3a1d37b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 7
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ad74e7989124a1ba8533b24da65201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 10
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fc0e2f8ddda4c459aa1e11f0aadcbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 12
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142daf01e4ee5443eb2af20727fd3da3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 26
+        width: 35
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba4f2766ef4e47a7b7eabd270c5e2ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 28
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e43c2229b384667aa47a783edec49c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 28
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ffae429807c4d0e8c3d3db4d6e75b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 28
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3db6dca63da94b62954b28e37473ee7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 28
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f02e28c5da5740efa7e04197a320f2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 28
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dc85cce534048d89c3248391401941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 14
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848f57ba96ad2483999e3e1216b5a647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 12
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16adb3d564164759a7f3eb195d46c72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 12
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0364e4dcef1224aa5a43e742aaf3bf94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 14
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a2b7f9cf92249f48f7f9b938b3bffb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 14
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdab6a23b7f7a45c6add5a4649612066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 14
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20acc551c74ad4f7eaf83e4dab28cc62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 14
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab9e4923ed90421e8ba38a95ceb557a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 16
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc22bc84e1cb940a69a3c60f52b14bcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedKit_spriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 25
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e96f1d5db2b401b8233e35e116ed8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

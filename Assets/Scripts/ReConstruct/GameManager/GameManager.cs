@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     public Character player;
     public MissionEnd missionEnd;
+    public FlagMissionEnd missionFlag;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!player.isAlive())
+        if (!player.isAlive() || missionFlag.IsMissionEnd())
         {
             missionEnd.gameObject.SetActive(true);
         }

@@ -95,6 +95,14 @@ public class Character : ReboObject
         Move(force);
     }
 
+    public override void Recuperate(float blood)
+    {
+        if (blood > 0)
+        {
+            health.Recuperate(blood);
+        }
+    }
+
     public override void Move(Vector2 force)
     {
         GetComponent<Rigidbody2D>().AddForce(force);
