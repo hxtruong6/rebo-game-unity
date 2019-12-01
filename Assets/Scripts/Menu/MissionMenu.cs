@@ -24,7 +24,6 @@ public class MissionMenu : MonoBehaviour
         StartCoroutine(LoadYourAsyncScene(Mission3Name));
     }
 
-
     IEnumerator LoadYourAsyncScene(string scence)
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scence);
