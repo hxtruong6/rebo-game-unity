@@ -4,27 +4,11 @@ using UnityEngine;
 
 public class Slug : Enemy
 {
-    void Start()
+
+    protected override void Setup()
     {
-        runSpeed = 5f;
-        jumpSpeed = 250f;
-        attackSpeed = 170f;
-
-        timeCountToAttack = 0;
-        attackRate = 2f;
-
-        health.currentHealth = health.maxHealth = 500;
-        damage = new Damage(100, 200);
-        level = new Level();
-        vision = new Vision(transform, 3.5f, 2.5f, leftRangeMove, rightRangeMove);
-
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        characterSprite = GetComponent<SpriteRenderer>();
-
-        originalPos = transform.position;
-
-        autoControl = new EnemyAutoControl(this, player, 6, 2);
-        
+        base.Setup();
+        type = EnemyType.Slug;
     }
 
     protected override void LookToTheLeft(bool toLeft)

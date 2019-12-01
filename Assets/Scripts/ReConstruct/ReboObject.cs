@@ -4,12 +4,28 @@ using UnityEngine;
 
 public class ReboObject : ReboRootObject
 {
-    public float runSpeed;
-    public float jumpSpeed;
+    public float runSpeed = 10;
+    public float jumpSpeed = 250;
 
-    public Damage damage;
+    public float maxHealth = 1000;
+    public int maxLevel = 6;
+    public float baseDamage = 0;
+    public float attackDamage = 50;
+
     public Vision vision;
+
+    protected Damage damage;
     protected SpriteRenderer characterSprite;
+
+    private void Start()
+    {
+        Setup();
+    }
+
+    protected virtual void Setup()
+    {
+
+    }
 
     protected virtual void WillTakeDamage(float damage)
     {

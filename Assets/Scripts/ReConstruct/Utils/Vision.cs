@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vision : Object
+public class Vision : ReboRootObject
 {
     private float spottOutRange;
     private float attackRange;

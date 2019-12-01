@@ -4,11 +4,32 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-    public float maxHealth;
+    public float maxHealth
+    {
+        get
+        {
+            return health.maxHealth;
+        }
+        set
+        {
+            health.maxHealth = value;
+        }
+    }
 
-    public float currentHealth;
+    public float currentHealth
+    {
+        get
+        {
+            return health.currentHealth;
+        }
 
-    private Health health;
+        set
+        {
+            health.currentHealth = value;
+        }
+    }
+
+    private Health health = new Health();
     private Transform bar;
 
     void Start()
@@ -17,9 +38,7 @@ public class HealthBar : MonoBehaviour
 
         bar = transform.Find("Bar");
 
-        SetSize(1.0f);
-
-        health = new Health(1000);
+        SetSize(1.0f); 
     }
 
     private void Update()

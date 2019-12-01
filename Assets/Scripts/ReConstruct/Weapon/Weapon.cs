@@ -10,12 +10,12 @@ public enum WeaponType
 
 public class Weapon : MonoBehaviour
 {
-    public float fireRate;
-    public float damage;
-    public float bulletForce;
-    public float bulletRange;
-    public float timePrepareToShoot;
-    public WeaponType type;
+    public float fireRate = 0.6f;
+    public float damage = 0;
+    public float bulletForce = 7;
+    public float bulletRange = 7;
+    public float timePrepareToShoot = 0.4f;
+    public WeaponType type = WeaponType.Bow;
 
     public Bullet bullet;
     public RuntimeAnimatorController weaponSuit;

@@ -6,17 +6,35 @@ public class LevelBar : MonoBehaviour
 {
    
     public Sprite[] levelSprites;
-    public int currentLevel;
-    public int maxLevel;
+    public int currentLevel
+    {
+        get
+        {
+            return level.currentLevel;
+        }
+        set
+        {
+            level.currentLevel = value;
+        }
+    }
+    public int maxLevel
+    {
+        get
+        {
+            return level.maxLevel;
+        }
+        set
+        {
+            level.maxLevel = value;
+        }
+    }
 
-    private Level level;
+    private Level level = new Level();
 
     void Start()
     {
         maxLevel = levelSprites.Length - 1;
         currentLevel = 0;
-
-        level = new Level(maxLevel);
     }
 
     private void Update()
