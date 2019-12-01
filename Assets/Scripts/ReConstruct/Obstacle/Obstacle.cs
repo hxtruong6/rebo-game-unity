@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Obstacle : ReboRootObject
 {
-    public float damage;
-    public Vector2 pushForce;
+    public float damage = 100;
+    public float maxTimeBetween2Attack = 0.7f;
+
+    protected float timeCount = 0;
+
+    private void Update()
+    {
+        timeCount += Time.deltaTime;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,8 +21,22 @@ public class Obstacle : ReboRootObject
             case "Player":
                 if (collision.gameObject != null)
                 {
-                    collision.gameObject.GetComponent<Character>().Move(pushForce);
+                    timeCount = 0;
+                    collision.gameObject.GetComponent<Character>().TakeDamage(damage);
+                }
 
+                break;
+
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Player":
+                if (timeCount > maxTimeBetween2Attack && collision.gameObject != null)
+                {
+                    timeCount = 0;
                     collision.gameObject.GetComponent<Character>().TakeDamage(damage);
                 }
 
