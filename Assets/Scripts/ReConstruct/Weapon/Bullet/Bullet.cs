@@ -34,7 +34,7 @@ public class Bullet : ReboRootObject
         GetComponent<Rigidbody2D>().AddForce(forceVector);
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (Mathf.Abs(transform.position.x - originalPos.x) >= range)

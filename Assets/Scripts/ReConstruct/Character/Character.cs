@@ -4,27 +4,24 @@ using UnityEngine;
 
 public class Character : ReboObject
 {
-    public int jumpCount;
-    public int maxJumpCount;
+    protected int jumpCount = 0;
+    public int maxJumpCount = 2;
+    public int numberOfCoins = 0;
 
     public LevelBar level;
     public HealthBar health;
     public WeaponManager weaponManager;
-    
-    void Start()
-    {
-        runSpeed = 7f;
-        jumpSpeed = 200f;
-        jumpCount = 0;
-        maxJumpCount = 2;        
 
-        damage = new Damage(0, 50);
+    private Dictionary<EnemyType, int> numberOfEnemiesAnnihilated = new Dictionary<EnemyType, int>();    
+
+    protected override void Setup()
+    {
+        damage = new Damage(baseDamage, attackDamage);
 
         characterSprite = GetComponent<SpriteRenderer>();
 
         UpdateSuit();
     }
-
 
     void Update()
     {
@@ -69,6 +66,13 @@ public class Character : ReboObject
         }
     }
 
+    public virtual void updateNumberOfEnemiesAnnihilated(EnemyType type)
+    {
+        if (numberOfEnemiesAnnihilated.ContainsKey(type))
+            numberOfEnemiesAnnihilated[type] += 1;
+        else
+            numberOfEnemiesAnnihilated.Add(type, 1);
+    }
     //---------------------------------------------------------------------
 
     public override void MoveToLeft(bool left, float force)

@@ -80,7 +80,7 @@ public class EnemyAutoControl : Object
     {
         if (state != EnemyState.Idle)
         {
-            Debug.Log("Keep Action Move " + state);
+            //Debug.Log("Keep Action Move " + state);
             if (state == EnemyState.MovingToLeft)
                 enemy.MoveToLef(true);
             else
@@ -89,14 +89,14 @@ public class EnemyAutoControl : Object
         else
         {
             enemy.Idel();
-            Debug.Log("Keep Idel");
+            //Debug.Log("Keep Idel");
         }
     }
 
     protected virtual void ResetTimeCount()
     {
         timeCount = 0;
-        Debug.Log("Reset timecount");
+        //Debug.Log("Reset timecount");
     }
 
     protected virtual bool CanAction()
@@ -137,7 +137,7 @@ public class EnemyAutoControl : Object
 
                 break;
         }
-        Debug.Log("New state " + newState);
+        //Debug.Log("New state " + newState);
         return newState;
     }
 }

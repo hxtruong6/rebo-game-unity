@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EnemyType
+{
+    Slug,
+    Solider
+}
+
 public class Enemy : ReboObject
 {
-    public float attackSpeed;
-    public float timeCountToAttack;
-    public float attackRate;
+    public float attackMoveSpeed = 150;    
+    public float attackRate = 2;
+    public float attackRange = 2;
+    public float spottOutRange = 3;
+    public float maxTimePerMoving = 5;
+    public float maxTimePerIdle = 2;
+    public float maxTimeBetween2TakeDamage = 5;
 
     public Level level;
     public HealthBar health;
-
 
     // Range move
     public Vector2 leftRangeMove;
@@ -18,15 +27,42 @@ public class Enemy : ReboObject
     
     protected Transform player;
     protected Vector2 originalPos;
+    protected EnemyType type = EnemyType.Slug;
+    protected float timeCountToAttack = 0;
+    protected float timeCountToRecuperate = 0;
 
-    protected EnemyAutoControl autoControl;
+    protected EnemyAutoControl autoControl;    
 
+    protected override void Setup()
+    {
+        health.currentHealth = health.maxHealth = maxHealth;
+
+        damage = new Damage(baseDamage, attackDamage);
+        level = new Level();
+        vision = new Vision(transform, spottOutRange, attackRange, leftRangeMove, rightRangeMove);
+
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        characterSprite = GetComponent<SpriteRenderer>();
+
+        originalPos = transform.position;
+
+        autoControl = new EnemyAutoControl(this, player, maxTimePerMoving, maxTimePerIdle);
+        timeCountToRecuperate = maxTimeBetween2TakeDamage;
+    }
 
     private void Update()
     {
         autoControl.Execute();
-        
+
+        if (timeCountToRecuperate > maxTimeBetween2TakeDamage)
+        {
+            if (health.gameObject.activeSelf)
+                health.gameObject.SetActive(false);
+            health.currentHealth = health.maxHealth;
+        }
+
         timeCountToAttack += Time.deltaTime;
+        timeCountToRecuperate += Time.deltaTime;
     }
 
 
@@ -38,7 +74,7 @@ public class Enemy : ReboObject
 
     protected virtual Vector2 GetPushForceWhenAttacking()
     {
-        float pushForce = 2 * attackSpeed;
+        float pushForce = 2 * attackMoveSpeed;
         if (LookToTheLeft())
             pushForce = -pushForce;
         return new Vector2(pushForce, 0);
@@ -68,8 +104,10 @@ public class Enemy : ReboObject
     public virtual IEnumerator DestroyEnemy(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-
+        
         Destroy(gameObject);
+
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Character>().updateNumberOfEnemiesAnnihilated(type);             
     }
     //-----------------------------------------------
     public override void Idel()
@@ -95,6 +133,15 @@ public class Enemy : ReboObject
     public override void Move(Vector2 force)
     {
         GetComponent<Rigidbody2D>().AddForce(force);
+    }
+
+    protected override void WillTakeDamage(float damage)
+    {
+        timeCountToRecuperate = 0;
+        if (!health.gameObject.activeSelf)
+        {
+            health.gameObject.SetActive(true);
+        }
     }
 
     protected override void TakingDamage(float damage)
@@ -124,7 +171,7 @@ public class Enemy : ReboObject
 
     protected override void Attacking()
     {
-        MoveToLeft(LookToTheLeft(), attackSpeed);
+        MoveToLeft(LookToTheLeft(), attackMoveSpeed);
     }
 
     protected override void DidAttacked()
