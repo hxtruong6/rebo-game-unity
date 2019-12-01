@@ -116,6 +116,7 @@ public class SoundManager : MonoBehaviour
         switch (type)
         {
             case WeaponType.Machinegun:
+                
                 break;
             case WeaponType.Bow:
                 break;

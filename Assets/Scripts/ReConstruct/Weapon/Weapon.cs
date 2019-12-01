@@ -50,6 +50,7 @@ public class Weapon : MonoBehaviour
     protected virtual void WillFire(Character character)
     {
         timeCount = 0;
+        FindObjectOfType<SoundManager>().PlayWeaponSound(type);
     }
 
     protected virtual Bullet FireNow(Character character)

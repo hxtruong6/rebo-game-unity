@@ -102,6 +102,7 @@ public class Character : ReboObject
 
     protected override void WillTakeDamage(float damage)
     {
+        FindObjectOfType<SoundManager>().PlayPlayerSound(SoundType.BeAttacked);
         SetTakeDamage_Animation();
     }
 
