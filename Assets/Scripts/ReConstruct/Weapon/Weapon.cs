@@ -21,6 +21,12 @@ public class Weapon : MonoBehaviour
     public RuntimeAnimatorController weaponSuit;
 
     private float timeCount;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -50,7 +56,7 @@ public class Weapon : MonoBehaviour
     protected virtual void WillFire(Character character)
     {
         timeCount = 0;
-        FindObjectOfType<SoundManager>().PlayWeaponSound(type);
+        FindObjectOfType<SoundManager>().PlayWeaponSound(audioSource, type);
     }
 
     protected virtual Bullet FireNow(Character character)

@@ -31,7 +31,10 @@ public class Enemy : ReboObject
     protected float timeCountToAttack = 0;
     protected float timeCountToRecuperate = 0;
 
-    protected EnemyAutoControl autoControl;    
+    protected EnemyAutoControl autoControl;
+
+    private AudioSource audioSource;
+    
 
     protected override void Setup()
     {
@@ -48,6 +51,8 @@ public class Enemy : ReboObject
 
         autoControl = new EnemyAutoControl(this, player, maxTimePerMoving, maxTimePerIdle);
         timeCountToRecuperate = maxTimeBetween2TakeDamage;
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -134,6 +139,7 @@ public class Enemy : ReboObject
 
     protected override void WillTakeDamage(float damage)
     {
+        FindObjectOfType<SoundManager>().PlayEnemySound(audioSource, SoundType.BeAttacked, type);
         timeCountToRecuperate = 0;
         if (!health.gameObject.activeSelf)
         {
@@ -193,6 +199,7 @@ public class Enemy : ReboObject
 
     protected override void WillBeDied()
     {
+        FindObjectOfType<SoundManager>().PlayEnemySound(audioSource, SoundType.Die, type);
         SetDie_Animation();
         health.gameObject.SetActive(false);
         //Destroy(health.gameObject);

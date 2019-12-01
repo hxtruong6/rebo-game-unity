@@ -111,14 +111,15 @@ public class SoundManager : MonoBehaviour
     }
 
     // TODO: Audio source from weapon or bullet?
-    public void PlayWeaponSound(WeaponType type)
+    public void PlayWeaponSound(AudioSource audioSource, WeaponType type)
     {
         switch (type)
         {
             case WeaponType.Machinegun:
-                
+                audioSource.PlayOneShot(BulletSound);
                 break;
             case WeaponType.Bow:
+                audioSource.PlayOneShot(BowSound);
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, "No weapon type");
