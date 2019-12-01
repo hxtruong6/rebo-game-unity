@@ -8,6 +8,9 @@ public class Camera_Follow : MonoBehaviour
 
     public float smoothSpeed = 0.15f;
 
+    public Vector2 leftRange;
+    public Vector2 rightRange;
+
     private void Awake()
     {
 #if UNITY_EDITOR
@@ -21,7 +24,7 @@ public class Camera_Follow : MonoBehaviour
         Vector3 temp = transform.position;
         temp.x += (target.position.x - transform.position.x) * smoothSpeed;
 
-        if (temp.x >= 0 && temp.x <= 52)
+        if (temp.x >= leftRange.x && temp.x <= rightRange.x)
         {
             transform.position = temp;
         }
