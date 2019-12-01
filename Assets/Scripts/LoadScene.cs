@@ -5,10 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    public string ScenceName = "Missions";
-    public void LoadMissionsScence()
+    public string MissionSceneName = "Missions";
+    public string CurrentSceneName = "Mission01";
+
+    public void LoadMissions()
     {
-        StartCoroutine(LoadYourAsyncScene(ScenceName));
+        StartCoroutine(LoadYourAsyncScene(MissionSceneName));
+    }
+
+    public void PlayAgain()
+    {
+        StartCoroutine(LoadYourAsyncScene(CurrentSceneName));
+    }
+
+    public void GoBack()
+    {
+        StartCoroutine(LoadYourAsyncScene(MissionSceneName));
     }
 
     IEnumerator LoadYourAsyncScene(string scence)
