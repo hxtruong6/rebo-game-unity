@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     const string MISSIONS = "Missions";
+    public GameObject SettingPanel;
     public void PlayGame()
     {
         StartCoroutine(LoadYourAsyncScene(MISSIONS));
+    }
+
+    public void SettingGameToggle()
+    {
+        SettingPanel.SetActive(!SettingPanel.activeSelf);
     }
 
 
