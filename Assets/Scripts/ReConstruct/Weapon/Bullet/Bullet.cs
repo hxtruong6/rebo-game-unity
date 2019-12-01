@@ -76,7 +76,7 @@ public class Bullet : ReboRootObject
 
     protected virtual float GetCurrentDamage()
     {
-        return 10 * damage * (1 - Mathf.Abs(transform.position.x - originalPos.x) / range);
+        return 5 * damage * (1 - Mathf.Abs(transform.position.x - originalPos.x) / range);
     }
 
 }
