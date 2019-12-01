@@ -1,18 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadScene : MonoBehaviour
+public class MissionEnd : MonoBehaviour
 {
     public string MissionSceneName = "Missions";
     public string CurrentSceneName = "Mission01";
+    public Character player;
+
+    private void Start()
+    {
+        if (player.isAlive())
+        {
+            transform.Find("Completed").gameObject.SetActive(true);
+            transform.Find("Failed").gameObject.SetActive(false);
+           
+            //GetComponent<MissionCompleted>().UpdateNumberOfEnemiesAnnihilated(player.numberOfEnemiesAnnihilated);
+        }
+        else
+        {
+            transform.Find("Completed").gameObject.SetActive(false);
+            transform.Find("Failed").gameObject.SetActive(true);
+        }
+
+        player.gameObject.SetActive(false);
+    }
 
     public void LoadMissions()
     {
         StartCoroutine(LoadYourAsyncScene(MissionSceneName));
     }
-
+    
     public void PlayAgain()
     {
         StartCoroutine(LoadYourAsyncScene(CurrentSceneName));

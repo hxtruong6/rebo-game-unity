@@ -12,7 +12,7 @@ public class Character : ReboObject
     public HealthBar health;
     public WeaponManager weaponManager;
 
-    private Dictionary<EnemyType, int> numberOfEnemiesAnnihilated = new Dictionary<EnemyType, int>();    
+    public Dictionary<EnemyType, int> numberOfEnemiesAnnihilated = new Dictionary<EnemyType, int>();    
 
     protected override void Setup()
     {

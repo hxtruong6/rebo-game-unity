@@ -102,10 +102,9 @@ public class Enemy : ReboObject
     public virtual IEnumerator DestroyEnemy(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        
-        Destroy(gameObject);
 
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Character>().updateNumberOfEnemiesAnnihilated(type);             
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Character>().updateNumberOfEnemiesAnnihilated(type);
+        Destroy(gameObject);                    
     }
     //-----------------------------------------------
     public override void Idel()
