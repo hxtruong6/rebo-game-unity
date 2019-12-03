@@ -84,7 +84,7 @@ public class Enemy : ReboObject
 
     protected virtual Vector2 GetPushForceWhenAttacking()
     {
-        float pushForce = 1.5f * attackMoveSpeed;
+        float pushForce = 0.8f * attackMoveSpeed;
         if (LookToTheLeft())
             pushForce = -pushForce;
         return new Vector2(pushForce, 0);
