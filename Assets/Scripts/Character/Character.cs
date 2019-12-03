@@ -64,7 +64,7 @@ public class Character : ReboObject
                 SetJump_Animation(false);
                 break;
         }
-    }
+    }  
 
     public virtual void updateNumberOfEnemiesAnnihilated(EnemyType type)
     {

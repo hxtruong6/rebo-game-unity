@@ -54,7 +54,7 @@ public class Bullet : ReboRootObject
             case "Enemy":
                 if (collision != null && collision.gameObject != null && collision.gameObject.GetComponent<Enemy>().isAlive())
                 {
-                    collision.gameObject.GetComponent<Enemy>().TakeDamage(GetCurrentDamage());
+                    collision.gameObject.GetComponent<Enemy>().TakeDamage(GetCurrentDamageFor(collision.gameObject));
 
                     Destroy(gameObject);
                 }
@@ -76,9 +76,13 @@ public class Bullet : ReboRootObject
         
     }
 
-    protected virtual float GetCurrentDamage()
+    protected virtual float GetCurrentDamageFor(GameObject enemy)
     {
-        return 5 * damage * (1 - Mathf.Abs(transform.position.x - originalPos.x) / range);
+        float distance = 1 - Mathf.Abs(transform.position.x - originalPos.x) / range;
+        if (distance < 0.3)
+            distance = 0.3f;
+
+        return damage * distance;
     }
 
 }

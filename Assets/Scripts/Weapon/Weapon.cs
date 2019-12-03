@@ -11,7 +11,7 @@ public enum WeaponType
 public class Weapon : ReboRootObject
 {
     public float fireRate = 0.6f;
-    public float damage = 0;
+    public float damage = 100;
     public float bulletForce = 7;
     public float bulletRange = 7;
     public float timePrepareToShoot = 0.4f;
@@ -77,7 +77,7 @@ public class Weapon : ReboRootObject
             bulletPos += distanceBetweenBulletVsHero;
         }
 
-        bulletClone.SetAtributes(bulletPos, character.GetAttackDamage(), force, bulletRange);
+        bulletClone.SetAtributes(bulletPos, damage + character.GetAttackDamage(), force, bulletRange);
 
         bulletClone.GetComponent<SpriteRenderer>().flipX = character.LookToTheLeft();
 

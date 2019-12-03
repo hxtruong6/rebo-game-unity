@@ -27,7 +27,7 @@ public class Enemy : ReboObject
 
     protected Transform player;
     protected Vector2 originalPos;
-    protected EnemyType type = EnemyType.Slug;
+    public EnemyType type = EnemyType.Slug;
     protected float timeCountToAttack = 0;
     protected float timeCountToRecuperate = 0;
 
