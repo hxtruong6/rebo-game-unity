@@ -21,6 +21,12 @@ public class Slug : Enemy
         return !characterSprite.flipX;
     }
 
-
+    public override float GetAttackDamage()
+    {
+        float d = base.GetAttackDamage();
+        if (Random.Range(0, 100) % 20 == 0)
+            d *= 2;
+        return d;
+    }
 }
 

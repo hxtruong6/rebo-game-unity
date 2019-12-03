@@ -79,7 +79,7 @@ public class Enemy : ReboObject
     public virtual void ChaseToLef(bool left)
     {
         SetRun_Animation(true);
-        MoveToLeft(left, 1.2f * runSpeed);
+        MoveToLeft(left, 1.5f * runSpeed);
     }
 
     protected virtual Vector2 GetPushForceWhenAttacking()

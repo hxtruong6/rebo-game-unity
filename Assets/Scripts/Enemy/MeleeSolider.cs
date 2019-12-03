@@ -20,4 +20,12 @@ public class MeleeSolider : Enemy
     {
         return !characterSprite.flipX;
     }
+
+    public override float GetAttackDamage()
+    {
+        float d = base.GetAttackDamage();
+        if (Random.Range(0, 100) % 10 == 0)
+            d *= 2;
+        return d;
+    }
 }
