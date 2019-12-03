@@ -6,6 +6,8 @@ public class MainMenu : MonoBehaviour
 {
     const string MISSIONS = "Missions";
     public GameObject SettingPanel;
+    public GameObject GuidelinePanel;
+
     public void PlayGame()
     {
         StartCoroutine(LoadYourAsyncScene(MISSIONS));
@@ -16,6 +18,10 @@ public class MainMenu : MonoBehaviour
         SettingPanel.SetActive(!SettingPanel.activeSelf);
     }
 
+    public void GuidelineGameToggle()
+    {
+        GuidelinePanel.SetActive(!GuidelinePanel.activeSelf);
+    }
 
     IEnumerator LoadYourAsyncScene(string scence)
     {

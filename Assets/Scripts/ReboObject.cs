@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ReboObject : ReboRootObject
 {
-    protected float FPS = 50;
+    protected static float FPS = 50;
 
     public float runSpeed = 10;
     public float jumpSpeed = 250;
