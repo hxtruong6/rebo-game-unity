@@ -9,6 +9,7 @@ public class MissionCompleted : ReboRootObject
     {
         transform.Find("Solider").Find("Text").GetComponent<Text>().text = "x0";
         transform.Find("Slug").Find("Text").GetComponent<Text>().text = "x0";
+
         if (numberOfEnemiesAnnihilated.ContainsKey(EnemyType.Solider))
         {
             transform.Find("Solider").Find("Text").GetComponent<Text>().text = "x" + numberOfEnemiesAnnihilated[EnemyType.Solider];

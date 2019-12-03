@@ -143,7 +143,7 @@ public class Enemy : ReboObject
 
     protected override void WillTakeDamage(float damage)
     {
-        FindObjectOfType<SoundManager>().PlayEnemySound(audioSource, SoundType.BeAttacked, type);
+        
         timeCountToRecuperate = 0;
         if (!health.gameObject.activeSelf)
         {
@@ -159,6 +159,7 @@ public class Enemy : ReboObject
 
     protected override void DidTakedDamage(float damage)
     {
+        FindObjectOfType<SoundManager>().PlayEnemySound(audioSource, SoundType.BeAttacked, type);
         if (!isAlive())
         {
             Die();

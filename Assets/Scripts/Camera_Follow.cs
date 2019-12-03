@@ -11,26 +11,30 @@ public class Camera_Follow : ReboRootObject
     public Vector2 leftRange;
     public Vector2 rightRange;
 
+    protected GameObject[] arrayGameObject;
+
     public override void SetupInAwake()
     {
         base.SetupInAwake();
         QualitySettings.vSyncCount = 0;
+
+        arrayGameObject = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
     private void Update()
     {
-        GameObject[] array = GameObject.FindGameObjectsWithTag("Enemy");
-        for(int i=0; i<array.Length; i++)
-        {
-            if (Vector2.Distance(target.position, array[i].transform.position) >= 30)
+        for (int i = 0; i < arrayGameObject.Length; i++)
+            if (arrayGameObject[i] != null)
             {
-                array[i].gameObject.SetActive(false);
+                if (Vector2.Distance(target.position, arrayGameObject[i].transform.position) <= 30)
+                {
+                    arrayGameObject[i].gameObject.SetActive(true);
+                }
+                else
+                {
+                    arrayGameObject[i].gameObject.SetActive(false);
+                }
             }
-            else
-            {
-                array[i].gameObject.SetActive(true);
-            }
-        }
     }
 
     void LateUpdate()

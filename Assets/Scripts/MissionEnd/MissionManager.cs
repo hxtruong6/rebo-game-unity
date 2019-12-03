@@ -4,33 +4,25 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MissionEnd : ReboRootObject
+public class MissionManager : ReboRootObject
 {
     public string MissionSceneName = "Missions";
     public string CurrentSceneName = "Mission01";
 
-    private string MainMenuScenceName = "Menu";
-    public Character player;
+    private string MainMenuScenceName = "Menu";    
 
-    private void Start()
+    public void SetComplete(Dictionary<EnemyType, int> numberOfEnemiesAnnihilated)
     {
-        if (player != null)
-        {
-            if (player.isAlive())
-            {
-                transform.Find("Completed").gameObject.SetActive(true);
-                transform.Find("Failed").gameObject.SetActive(false);
+        transform.Find("Completed").gameObject.SetActive(true);
+        transform.Find("Completed").gameObject.GetComponent<MissionCompleted>().UpdateNumberOfEnemiesAnnihilated(numberOfEnemiesAnnihilated);
 
-                //GetComponent<MissionCompleted>().UpdateNumberOfEnemiesAnnihilated(player.numberOfEnemiesAnnihilated);
-            }
-            else
-            {
-                transform.Find("Completed").gameObject.SetActive(false);
-                transform.Find("Failed").gameObject.SetActive(true);
-            }
+        transform.Find("Failed").gameObject.SetActive(false);
+    }
 
-            player.gameObject.SetActive(false);
-        }
+    public void SetFail()
+    {
+        transform.Find("Completed").gameObject.SetActive(false);
+        transform.Find("Failed").gameObject.SetActive(true);
     }
 
     public void LoadMissions()

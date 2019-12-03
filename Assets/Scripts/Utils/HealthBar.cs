@@ -41,10 +41,6 @@ public class HealthBar : ReboRootObject
         SetSize(1.0f); 
     }
 
-    private void Update()
-    {
-        ChangeHealth();
-    }
 
     public float PercentageOfHealth()
     {

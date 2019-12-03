@@ -56,7 +56,7 @@ public class Weapon : ReboRootObject
     protected virtual void WillFire(Character character)
     {
         timeCount = 0;
-        FindObjectOfType<SoundManager>().PlayWeaponSound(audioSource, type);
+        
     }
 
     protected virtual Bullet FireNow(Character character)
@@ -86,7 +86,7 @@ public class Weapon : ReboRootObject
 
     protected virtual void DidFire(Bullet bullet)
     {
-
+        FindObjectOfType<SoundManager>().PlayWeaponSound(audioSource, type);
     }
 
     protected virtual IEnumerator FiringProcess(Character character)

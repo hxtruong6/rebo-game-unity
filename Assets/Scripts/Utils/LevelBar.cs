@@ -37,10 +37,7 @@ public class LevelBar : ReboRootObject
         currentLevel = 0;
     }
 
-    private void Update()
-    {
-        LevelChanged();
-    }
+
 
     private void LevelChanged()
     {

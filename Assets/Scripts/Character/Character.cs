@@ -5,7 +5,7 @@ using UnityEngine;
 public class Character : ReboObject
 {
     public int jumpCount = 0;
-    public int maxJumpCount = 2;
+    public int maxJumpCount = 1;
     public int numberOfCoins = 0;
 
     public LevelBar level;
@@ -105,7 +105,7 @@ public class Character : ReboObject
 
     protected override void WillTakeDamage(float damage)
     {
-        FindObjectOfType<SoundManager>().PlayPlayerSound(SoundType.BeAttacked);
+        
         SetTakeDamage_Animation();
     }
 
@@ -119,6 +119,7 @@ public class Character : ReboObject
         SetRun_Animation(false);
         SetJump_Animation(false);
 
+        FindObjectOfType<SoundManager>().PlayPlayerSound(SoundType.BeAttacked);
         if (!isAlive())
             Die();
     }
